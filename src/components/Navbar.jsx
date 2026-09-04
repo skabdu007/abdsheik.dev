@@ -71,14 +71,14 @@ export const Navbar = () => {
           : "bg-transparent py-5 border-b border-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-3">
         {/* LEFT: LOGO / YOUR NAME */}
         <Link
           to="/"
-          className="flex items-center gap-2.5 group focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 rounded-lg"
+          className="flex items-center gap-2.5 sm:gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 rounded-xl shrink-0"
           aria-label="Home"
         >
-          <div className="w-10 h-10 rounded-xl overflow-hidden bg-[#091024] border border-sky-500/30 flex items-center justify-center group-hover:scale-105 group-hover:border-sky-400 transition-all shadow-glow-sm shrink-0">
+          <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl overflow-hidden bg-[#091024] border border-sky-500/30 flex items-center justify-center group-hover:scale-105 group-hover:border-sky-400 transition-all shadow-glow-sm shrink-0">
             <img
               src={getAssetUrl(personalData.profileImage)}
               alt={personalData.name}
@@ -89,18 +89,18 @@ export const Navbar = () => {
               }}
             />
           </div>
-          <div className="flex flex-col">
-            <span className="font-mono font-black text-sm sm:text-base tracking-wider text-white group-hover:text-sky-300 transition-colors uppercase">
+          <div className="flex flex-col shrink-0 whitespace-nowrap">
+            <span className="font-mono font-black text-xs sm:text-sm md:text-base tracking-wider text-white group-hover:text-sky-300 transition-colors uppercase whitespace-nowrap">
               {personalData.name}
             </span>
-            <span className="text-[10px] font-mono tracking-widest text-sky-400/90 uppercase -mt-0.5">
+            <span className="text-[9px] sm:text-[10px] font-mono tracking-widest text-sky-400/90 uppercase -mt-0.5 whitespace-nowrap">
               FULL STACK DEVELOPER
             </span>
           </div>
         </Link>
 
         {/* RIGHT: DESKTOP NAVIGATION */}
-        <nav className="hidden md:flex items-center gap-1 bg-[#091024]/80 p-1.5 rounded-full border border-white/[0.06] backdrop-blur-md">
+        <nav className="hidden lg:flex items-center gap-0.5 xl:gap-1 bg-[#091024]/80 p-1 rounded-full border border-white/[0.06] backdrop-blur-md shrink min-w-0">
           {NAV_ITEMS.map((item) => {
             const sectionId = item.href.replace("#", "");
             const isActive = isHomePage && activeSection === sectionId;
@@ -111,7 +111,7 @@ export const Navbar = () => {
                 key={item.label}
                 href={targetUrl}
                 onClick={(e) => handleNavClick(e, item.href)}
-                className={`relative px-4 py-2 text-xs font-mono uppercase tracking-wider rounded-full transition-all duration-200 ${
+                className={`relative px-2.5 xl:px-3.5 py-1.5 text-[11px] xl:text-xs font-mono uppercase tracking-wider rounded-full transition-all duration-200 whitespace-nowrap shrink-0 ${
                   isActive
                     ? "text-white font-bold"
                     : "text-slate-400 hover:text-white hover:bg-white/[0.04]"
@@ -131,7 +131,7 @@ export const Navbar = () => {
         </nav>
 
         {/* Right CTA Button */}
-        <div className="hidden lg:flex items-center gap-3">
+        <div className="hidden lg:flex items-center gap-3 shrink-0">
           <Button
             href={getAssetUrl(personalData.resumeUrl)}
             download="SHEIK_ABDULLA_CV.pdf"
@@ -147,7 +147,7 @@ export const Navbar = () => {
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
-          className="md:hidden p-2 rounded-xl glass-card border border-white/10 text-slate-300 hover:text-white hover:border-sky-500/40 transition-colors"
+          className="lg:hidden p-2 rounded-xl glass-card border border-white/10 text-slate-300 hover:text-white hover:border-sky-500/40 transition-colors shrink-0"
         >
           {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
@@ -161,7 +161,7 @@ export const Navbar = () => {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.25, ease: "easeInOut" }}
-            className="md:hidden bg-[#050816]/98 border-b border-white/[0.1] backdrop-blur-xl px-4 pt-3 pb-6 space-y-2 overflow-hidden"
+            className="lg:hidden bg-[#050816]/98 border-b border-white/[0.1] backdrop-blur-xl px-4 pt-3 pb-6 space-y-2 overflow-hidden"
           >
             {NAV_ITEMS.map((item) => {
               const sectionId = item.href.replace("#", "");
