@@ -8,8 +8,8 @@ Built specifically for free hosting on **GitHub Pages** (`https://YOUR-USERNAME.
 
 ## 🚀 Live Demo
 
-- **Production URL**: [https://skabdu007.github.io/](https://skabdu007.github.io/)
-- **Repository**: [https://github.com/skabdu007/skabdu007.github.io](https://github.com/skabdu007/skabdu007.github.io)
+- **Production URL**: [https://skabdu007.github.io/abdsheik.dev/](https://skabdu007.github.io/abdsheik.dev/)
+- **Repository**: [https://github.com/skabdu007/abdsheik.dev](https://github.com/skabdu007/abdsheik.dev)
 
 ---
 
@@ -126,7 +126,7 @@ portfolio/
 
 1. Clone or download this repository:
    ```bash
-   git clone https://github.com/skabdu007/skabdu007.github.io.git
+   git clone https://github.com/skabdu007/abdsheik.dev.git
    cd portfolio
    ```
 
@@ -170,7 +170,7 @@ git init
 git add .
 git commit -m "Deploy React portfolio"
 git branch -M main
-git remote add origin https://github.com/skabdu007/skabdu007.github.io.git
+git remote add origin https://github.com/skabdu007/abdsheik.dev.git
 git push -u origin main
 ```
 git push -u origin main

@@ -44,8 +44,8 @@ export const personalData = {
     linkedin: "https://linkedin.com/in/skabd2004",
     githubUsername: "skabdu007",
     linkedinUsername: "skabd2004",
-    repoUrl: "https://github.com/skabdu007/skabdu007.github.io",
-    liveUrl: "https://skabdu007.github.io/"
+    repoUrl: "https://github.com/skabdu007/abdsheik.dev",
+    liveUrl: "https://skabdu007.github.io/abdsheik.dev/"
   },
   resumeUrl: "/Resume/SHEIK%20ABDULLA_CV.pdf",
   profileImage: "/assets/profile.png"
