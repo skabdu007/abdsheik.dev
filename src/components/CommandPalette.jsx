@@ -26,6 +26,7 @@ import {
 } from "lucide-react";
 import { personalData } from "@/data/personal";
 import { useDocumentModal } from "@/context/DocumentModalContext";
+import { getAssetUrl } from "@/lib/utils";
 
 export const CommandPalette = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -81,8 +82,8 @@ export const CommandPalette = () => {
         setIsOpen(false);
         openModal({
           title: "SHEIK ABDULLA S - Curriculum Vitae",
-          subtitle: "Full Stack Developer · MCA Graduate",
-          url: personalData.resumeUrl,
+          subtitle: "React.js & Frontend Developer · MCA Graduate",
+          url: getAssetUrl(personalData.resumeUrl),
           fileType: "pdf",
           size: "185 KB",
           downloadName: "SHEIK_ABDULLA_CV.pdf",
@@ -100,7 +101,7 @@ export const CommandPalette = () => {
       perform: () => {
         setIsOpen(false);
         const link = document.createElement("a");
-        link.href = personalData.resumeUrl;
+        link.href = getAssetUrl(personalData.resumeUrl);
         link.download = "SHEIK_ABDULLA_CV.pdf";
         link.click();
         showToast("Downloading Sheik Abdulla's CV (PDF)...");
@@ -118,7 +119,7 @@ export const CommandPalette = () => {
         openModal({
           title: "Fashion E-Commerce - Full Technical Documentation",
           subtitle: "Software Engineering Specifications & System Architecture",
-          url: "/Doc/fashion_e_com_preview.pdf",
+          url: getAssetUrl("/Doc/fashion_e_com_preview.pdf"),
           fileType: "pdf",
           size: "7.0 MB",
           downloadName: "Fashion_Ecommerce_Project_Report.pdf",
@@ -136,7 +137,7 @@ export const CommandPalette = () => {
       perform: () => {
         setIsOpen(false);
         const link = document.createElement("a");
-        link.href = "/PPT/24spca043_fashion_E-Com.pptx";
+        link.href = getAssetUrl("/PPT/24spca043_fashion_E-Com.pptx");
         link.download = "24spca043_fashion_E-Com.pptx";
         link.click();
         showToast("Downloading Defense Slide Deck (.pptx)...");

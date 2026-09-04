@@ -16,6 +16,7 @@ import { personalData } from "@/data/personal";
 import { SectionHeading } from "@/components/SectionHeading";
 import { AnimatedContainer } from "@/components/AnimatedContainer";
 import { useDocumentModal } from "@/context/DocumentModalContext";
+import { getAssetUrl } from "@/lib/utils";
 
 export const DeliverablesHub = () => {
   const { openModal } = useDocumentModal();
@@ -24,8 +25,8 @@ export const DeliverablesHub = () => {
   const handlePreviewResume = () => {
     openModal({
       title: "SHEIK ABDULLA S - Curriculum Vitae",
-      subtitle: "Full Stack Developer · MCA Graduate",
-      url: deliverables.resume.url,
+      subtitle: "React.js & Frontend Developer · MCA Graduate",
+      url: getAssetUrl(deliverables.resume.url),
       fileType: "pdf",
       size: deliverables.resume.size,
       downloadName: deliverables.resume.downloadName,
@@ -37,7 +38,7 @@ export const DeliverablesHub = () => {
     openModal({
       title: "Fashion E-Commerce & Auction Platform - Full Documentation",
       subtitle: "Software Engineering Specifications & System Architecture Report",
-      url: deliverables.doc.url,
+      url: getAssetUrl(deliverables.doc.url),
       fileType: "pdf",
       size: deliverables.doc.size,
       downloadName: deliverables.doc.downloadName,
@@ -49,7 +50,7 @@ export const DeliverablesHub = () => {
     openModal({
       title: "Fashion E-Commerce - Viva Defense Presentation Deck",
       subtitle: "Academic Defense Slides (Candidate Reg No: 24SPCA043)",
-      url: deliverables.ppt.url,
+      url: getAssetUrl(deliverables.ppt.url),
       fileType: "pptx",
       size: deliverables.ppt.size,
       downloadName: deliverables.ppt.downloadName,
@@ -94,14 +95,18 @@ export const DeliverablesHub = () => {
                 <div className="flex items-center gap-3.5 mb-5">
                   <div className="w-14 h-14 rounded-2xl overflow-hidden border border-cyan-500/40 bg-[#070b18] shadow-glow-sm group-hover:scale-105 transition-transform shrink-0">
                     <img
-                      src="/developer-avatar.svg"
+                      src={getAssetUrl(personalData.profileImage)}
                       alt="Sheik Abdulla S"
                       className="w-full h-full object-cover"
+                      onError={(e) => {
+                        e.currentTarget.onerror = null;
+                        e.currentTarget.src = getAssetUrl("/developer-avatar.png");
+                      }}
                     />
                   </div>
                   <div>
                     <span className="text-[10px] font-mono uppercase tracking-widest text-cyan-400 block font-bold">
-                      VERIFIED ENGINEER
+                      VERIFIED DEVELOPER
                     </span>
                     <span className="text-xs font-mono text-slate-300">
                       Sheik Abdulla S
@@ -117,7 +122,7 @@ export const DeliverablesHub = () => {
                 </p>
 
                 <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">
-                  Formal resume outlining MCA qualifications, 2 industry internships at Friendzion Technologies &amp; DCE Technology, MERN stack mastery, and live production deployments.
+                  Formal resume outlining MCA qualifications, industry internships, React.js and JavaScript competencies, and live production deployments.
                 </p>
 
                 {/* Highlights List */}
@@ -142,7 +147,7 @@ export const DeliverablesHub = () => {
                 </button>
 
                 <a
-                  href={deliverables.resume.url}
+                  href={getAssetUrl(deliverables.resume.url)}
                   download={deliverables.resume.downloadName}
                   className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs font-mono font-bold uppercase tracking-wider bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white shadow-glow-sm transition-all active:scale-95"
                 >
@@ -211,7 +216,7 @@ export const DeliverablesHub = () => {
                   </button>
 
                   <a
-                    href={deliverables.doc.url}
+                    href={getAssetUrl(deliverables.doc.url)}
                     download={deliverables.doc.downloadName}
                     className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs font-mono font-bold uppercase tracking-wider bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white shadow-glow-sm transition-all active:scale-95"
                   >
@@ -221,7 +226,7 @@ export const DeliverablesHub = () => {
                 </div>
 
                 <Link
-                  to="/projects/fashion-ecommerce-auction-platform"
+                  to="/projects/ecommerce-react"
                   className="w-full inline-flex items-center justify-center gap-1.5 text-xs font-mono text-indigo-400 hover:text-cyan-300 pt-1 transition-colors"
                 >
                   <span>Explore Interactive Case Study</span>
@@ -284,7 +289,7 @@ export const DeliverablesHub = () => {
                   </button>
 
                   <a
-                    href={deliverables.ppt.url}
+                    href={getAssetUrl(deliverables.ppt.url)}
                     download={deliverables.ppt.downloadName}
                     className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs font-mono font-bold uppercase tracking-wider bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 font-bold shadow-glow-sm transition-all active:scale-95"
                   >

@@ -14,6 +14,7 @@ import {
   Zap
 } from "lucide-react";
 import { Button } from "@/components/Button";
+import { getAssetUrl } from "@/lib/utils";
 
 export const About = () => {
   return (
@@ -82,7 +83,7 @@ export const About = () => {
                     View Selected Projects
                   </Button>
                   <Button
-                    href={personalData.resumeUrl}
+                    href={getAssetUrl(personalData.resumeUrl)}
                     download="SHEIK_ABDULLA_CV.pdf"
                     variant="secondary"
                     size="sm"

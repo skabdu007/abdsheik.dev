@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Code2, Download, ArrowRight } from "lucide-react";
 import { personalData } from "@/data/personal";
 import { Button } from "@/components/Button";
+import { getAssetUrl } from "@/lib/utils";
 
 const NAV_ITEMS = [
   { label: "Home", href: "#home" },
@@ -11,6 +12,7 @@ const NAV_ITEMS = [
   { label: "Skills", href: "#skills" },
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
+  { label: "Deliverables", href: "#deliverables" },
   { label: "Education", href: "#education" },
   { label: "Certifications", href: "#certifications" },
   { label: "Services", href: "#services" },
@@ -123,7 +125,7 @@ export const Navbar = () => {
         {/* Right CTA Button */}
         <div className="hidden lg:flex items-center gap-3">
           <Button
-            href={personalData.resumeUrl}
+            href={getAssetUrl(personalData.resumeUrl)}
             download="SHEIK_ABDULLA_CV.pdf"
             variant="outline"
             size="sm"
@@ -176,14 +178,14 @@ export const Navbar = () => {
 
             <div className="pt-3 border-t border-white/[0.08] flex items-center gap-2">
               <Button
-                href={personalData.resumeUrl}
+                href={getAssetUrl(personalData.resumeUrl)}
                 download="SHEIK_ABDULLA_CV.pdf"
                 variant="primary"
                 size="sm"
                 icon={Download}
                 className="w-full"
               >
-                DOWNLOAD CV
+                Download CV
               </Button>
             </div>
           </motion.div>

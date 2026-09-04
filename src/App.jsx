@@ -6,6 +6,8 @@ import { Home } from "@/pages/Home";
 import { Projects } from "@/pages/Projects";
 import { ProjectDetails } from "@/pages/ProjectDetails";
 import { NotFound } from "@/pages/NotFound";
+import { DocumentModalProvider } from "@/context/DocumentModalContext";
+import { DocumentViewerModal } from "@/components/DocumentViewerModal";
 
 // Handles smooth hash scrolling on page load/navigation or scroll-to-top on route change
 function ScrollHandler() {
@@ -30,18 +32,21 @@ function ScrollHandler() {
 
 export const App = () => {
   return (
-    <div className="min-h-screen bg-[#050816] text-slate-100 flex flex-col font-sans selection:bg-sky-500/30 selection:text-white">
-      <ScrollHandler />
-      <Navbar />
-      <div className="flex-1">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/projects/:slug" element={<ProjectDetails />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+    <DocumentModalProvider>
+      <div className="min-h-screen bg-[#050816] text-slate-100 flex flex-col font-sans selection:bg-sky-500/30 selection:text-white">
+        <ScrollHandler />
+        <Navbar />
+        <div className="flex-1">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects/:slug" element={<ProjectDetails />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </div>
+        <Footer />
+        <DocumentViewerModal />
       </div>
-      <Footer />
-    </div>
+    </DocumentModalProvider>
   );
 };

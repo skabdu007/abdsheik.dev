@@ -4,6 +4,7 @@ import { About } from "@/components/About";
 import { Skills } from "@/components/Skills";
 import { Experience } from "@/components/Experience";
 import { Projects } from "@/components/Projects";
+import { DeliverablesHub } from "@/components/DeliverablesHub";
 import { Education } from "@/components/Education";
 import { Certifications } from "@/components/Certifications";
 import { Services } from "@/components/Services";
@@ -17,6 +18,7 @@ export const Home = () => {
       <Skills />
       <Experience />
       <Projects />
+      <DeliverablesHub />
       <Education />
       <Certifications />
       <Services />

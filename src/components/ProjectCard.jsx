@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Github, ExternalLink, ArrowRight, Sparkles } from "lucide-react";
 import { TechBadge } from "@/components/TechBadge";
 import { Button } from "@/components/Button";
+import { getAssetUrl } from "@/lib/utils";
 
 export const ProjectCard = ({ project, featured = false }) => {
   return (
@@ -26,7 +27,7 @@ export const ProjectCard = ({ project, featured = false }) => {
         }`}
       >
         <img
-          src={project.image}
+          src={getAssetUrl(project.image)}
           alt={project.title}
           className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
           loading="lazy"

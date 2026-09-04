@@ -17,6 +17,7 @@ import { DeveloperIllustration } from "@/components/DeveloperIllustration";
 import { SocialLinks } from "@/components/SocialLinks";
 import { TechBadge } from "@/components/TechBadge";
 import { Button } from "@/components/Button";
+import { getAssetUrl } from "@/lib/utils";
 
 export const Hero = () => {
   const techBadges = [
@@ -88,7 +89,7 @@ export const Hero = () => {
               </Button>
 
               <Button
-                href={personalData.resumeUrl}
+                href={getAssetUrl(personalData.resumeUrl)}
                 download="SHEIK_ABDULLA_CV.pdf"
                 variant="secondary"
                 size="md"

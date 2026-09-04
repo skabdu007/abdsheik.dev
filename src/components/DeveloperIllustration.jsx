@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Atom, Code2, Sparkles, Layers, Zap } from "lucide-react";
 import { personalData } from "@/data/personal";
+import { getAssetUrl } from "@/lib/utils";
 
 export const DeveloperIllustration = ({ className = "" }) => {
   return (
@@ -20,10 +21,14 @@ export const DeveloperIllustration = ({ className = "" }) => {
       <div className="relative z-10 w-[92%] h-[92%] rounded-3xl overflow-hidden glass-card p-2 border border-sky-500/30 shadow-glow-md group">
         <div className="relative w-full h-full rounded-2xl overflow-hidden bg-gradient-to-b from-[#0e162d] to-[#050816] flex items-center justify-center">
           <img
-            src={personalData.profileImage || "/assets/profile.png"}
+            src={getAssetUrl(personalData.profileImage)}
             alt={`${personalData.name} - React.js & JavaScript Developer`}
             className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
             loading="eager"
+            onError={(e) => {
+              e.currentTarget.onerror = null;
+              e.currentTarget.src = getAssetUrl("/developer-avatar.png");
+            }}
           />
 
           {/* Bottom Gradient Overlay */}

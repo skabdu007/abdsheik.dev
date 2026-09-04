@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import { TechBadge } from "@/components/TechBadge";
 import { Button } from "@/components/Button";
+import { getAssetUrl } from "@/lib/utils";
 
 export const ProjectDetails = () => {
   const { slug } = useParams();
@@ -124,7 +125,7 @@ export const ProjectDetails = () => {
         <div className="rounded-2xl overflow-hidden glass-card border border-white/[0.08] p-2 mb-12 shadow-glass">
           <div className="rounded-xl overflow-hidden bg-[#070b18] aspect-[16/9]">
             <img
-              src={project.image}
+              src={getAssetUrl(project.image)}
               alt={project.title}
               className="w-full h-full object-cover object-center"
             />
