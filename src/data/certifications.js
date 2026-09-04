@@ -5,7 +5,7 @@ export const certificationsData = [
     issuer: "Friendzion Technologies & Meta Learning",
     date: "Completed 2025",
     credentialId: "FZ-REACT-SPEC-2025",
-    url: "https://github.com/skabdu007/abdsheik.github.io",
+    url: "https://github.com/skabdu007/skabdu007.github.io",
     image: "/assets/certificates/react-cert.svg",
     iconName: "Atom",
     skills: ["React.js", "React Hooks", "Context API", "Virtual DOM", "Component Architecture"]
@@ -16,7 +16,7 @@ export const certificationsData = [
     issuer: "DCE Technology & OpenJS Academy",
     date: "Completed 2025",
     credentialId: "JS-ES6-ADV-2025",
-    url: "https://github.com/skabdu007/abdsheik.github.io",
+    url: "https://github.com/skabdu007/skabdu007.github.io",
     image: "/assets/certificates/js-cert.svg",
     iconName: "Code2",
     skills: ["JavaScript ES6+", "Async/Await", "Promises", "Closures", "DOM Manipulation"]
@@ -27,7 +27,7 @@ export const certificationsData = [
     issuer: "Modern Web Institute",
     date: "Completed 2024",
     credentialId: "FED-TAILWIND-VITE-2024",
-    url: "https://github.com/skabdu007/abdsheik.github.io",
+    url: "https://github.com/skabdu007/skabdu007.github.io",
     image: "/assets/certificates/frontend-cert.svg",
     iconName: "Layout",
     skills: ["Tailwind CSS", "Responsive Design", "Vite", "REST Integration", "Accessibility"]
@@ -38,7 +38,7 @@ export const certificationsData = [
     issuer: "VHN Senthikumara Nadar College",
     date: "Completed 2024",
     credentialId: "WEB-DEV-FND-2024",
-    url: "https://github.com/skabdu007/abdsheik.github.io",
+    url: "https://github.com/skabdu007/skabdu007.github.io",
     image: "/assets/certificates/web-cert.svg",
     iconName: "Globe",
     skills: ["HTML5", "CSS3", "Web APIs", "Cross-Browser Parity", "Performance"]
