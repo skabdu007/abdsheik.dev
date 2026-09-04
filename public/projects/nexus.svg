@@ -1,0 +1,70 @@
+<svg width="800" height="480" viewBox="0 0 800 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="480" fill="#080C17"/>
+  <circle cx="550" cy="200" r="280" fill="url(#nexus_glow)" opacity="0.35"/>
+  
+  <!-- Cyber Grid -->
+  <path d="M0 60H800M0 120H800M0 180H800M0 240H800M0 300H800M0 360H800M0 420H800" stroke="#172554" stroke-opacity="0.3" stroke-width="1"/>
+  
+  <!-- Main IDE & Analytics Frame -->
+  <rect x="50" y="45" width="700" height="390" rx="12" fill="#0B1329" stroke="#1E293B" stroke-width="1.5"/>
+  <rect x="50" y="45" width="700" height="40" rx="12" fill="#0E1A38"/>
+  <circle cx="75" cy="65" r="5" fill="#EF4444"/>
+  <circle cx="93" cy="65" r="5" fill="#F59E0B"/>
+  <circle cx="111" cy="65" r="5" fill="#10B981"/>
+  <text x="135" y="69" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">Nexus Code Analytics — Repository AST &amp; PR Velocity</text>
+
+  <!-- Code Heatmap Blocks -->
+  <g transform="translate(80, 110)">
+    <text x="0" y="0" fill="#60A5FA" font-family="system-ui, sans-serif" font-size="13" font-weight="600">AST MODULE CHURN HEATMAP</text>
+    <!-- Grid of commits -->
+    <rect x="0" y="15" width="30" height="30" rx="4" fill="#1E3A8A"/>
+    <rect x="36" y="15" width="30" height="30" rx="4" fill="#2563EB"/>
+    <rect x="72" y="15" width="30" height="30" rx="4" fill="#3B82F6"/>
+    <rect x="108" y="15" width="30" height="30" rx="4" fill="#60A5FA"/>
+    <rect x="144" y="15" width="30" height="30" rx="4" fill="#93C5FD"/>
+    <rect x="180" y="15" width="30" height="30" rx="4" fill="#3B82F6"/>
+    <rect x="216" y="15" width="30" height="30" rx="4" fill="#1D4ED8"/>
+    <rect x="252" y="15" width="30" height="30" rx="4" fill="#60A5FA"/>
+    <rect x="288" y="15" width="30" height="30" rx="4" fill="#1E40AF"/>
+
+    <rect x="0" y="51" width="30" height="30" rx="4" fill="#2563EB"/>
+    <rect x="36" y="51" width="30" height="30" rx="4" fill="#1E293B"/>
+    <rect x="72" y="51" width="30" height="30" rx="4" fill="#3B82F6"/>
+    <rect x="108" y="51" width="30" height="30" rx="4" fill="#1D4ED8"/>
+    <rect x="144" y="51" width="30" height="30" rx="4" fill="#60A5FA"/>
+    <rect x="180" y="51" width="30" height="30" rx="4" fill="#93C5FD"/>
+    <rect x="216" y="51" width="30" height="30" rx="4" fill="#2563EB"/>
+    <rect x="252" y="51" width="30" height="30" rx="4" fill="#3B82F6"/>
+    <rect x="288" y="51" width="30" height="30" rx="4" fill="#1E3A8A"/>
+  </g>
+
+  <!-- Right Side: Metrics panel -->
+  <g transform="translate(430, 110)">
+    <rect x="0" y="0" width="290" height="85" rx="8" fill="#111C3A" stroke="#1E293B"/>
+    <text x="18" y="24" fill="#64748B" font-family="system-ui, sans-serif" font-size="11" font-weight="600">AVG PR MERGE TIME</text>
+    <text x="18" y="56" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="24" font-weight="700">1.8 hrs</text>
+    <text x="140" y="56" fill="#10B981" font-family="system-ui, sans-serif" font-size="11" font-weight="600">▲ 3.2x Faster</text>
+
+    <rect x="0" y="100" width="290" height="85" rx="8" fill="#111C3A" stroke="#1E293B"/>
+    <text x="18" y="124" fill="#64748B" font-family="system-ui, sans-serif" font-size="11" font-weight="600">TEST COVERAGE INTEGRITY</text>
+    <text x="18" y="156" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="24" font-weight="700">92.4%</text>
+    <text x="140" y="156" fill="#10B981" font-family="system-ui, sans-serif" font-size="11" font-weight="600">+14.2% MoM</text>
+  </g>
+
+  <!-- Bottom Code Inspection Preview -->
+  <rect x="80" y="220" width="640" height="185" rx="8" fill="#080E1E" stroke="#1E293B"/>
+  <text x="100" y="248" fill="#A855F7" font-family="monospace" font-size="12">def</text>
+  <text x="130" y="248" fill="#60A5FA" font-family="monospace" font-size="12">analyze_ast_complexity(repo_ast: Module) -&gt; Scorecard:</text>
+  <text x="120" y="274" fill="#64748B" font-family="monospace" font-size="12"># Real-time cyclomatic complexity &amp; token entropy calculation</text>
+  <text x="120" y="300" fill="#E2E8F0" font-family="monospace" font-size="12">metrics = compute_halstead_volume(repo_ast.body)</text>
+  <text x="120" y="326" fill="#38BDF8" font-family="monospace" font-size="12">await event_bus.publish("pr:evaluated", payload=metrics)</text>
+  <text x="120" y="352" fill="#A855F7" font-family="monospace" font-size="12">return</text>
+  <text x="175" y="352" fill="#E2E8F0" font-family="monospace" font-size="12">Scorecard(status="VERIFIED", confidence=0.998)</text>
+
+  <defs>
+    <radialGradient id="nexus_glow" cx="0.5" cy="0.5" r="0.5">
+      <stop stop-color="#0284C7"/>
+      <stop offset="1" stop-color="#0284C7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

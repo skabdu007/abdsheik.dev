@@ -1,0 +1,67 @@
+<svg width="800" height="480" viewBox="0 0 800 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="480" fill="#090D1A"/>
+  <circle cx="400" cy="150" r="250" fill="url(#erp_glow)" opacity="0.4"/>
+  
+  <!-- Grid background -->
+  <path d="M0 60H800M0 120H800M0 180H800M0 240H800M0 300H800M0 360H800M0 420H800" stroke="#1E293B" stroke-opacity="0.4" stroke-width="1"/>
+  <path d="M100 0V480M200 0V480M300 0V480M400 0V480M500 0V480M600 0V480M700 0V480" stroke="#1E293B" stroke-opacity="0.4" stroke-width="1"/>
+  
+  <!-- Dashboard Window -->
+  <rect x="60" y="50" width="680" height="380" rx="14" fill="#0B1120" stroke="#334155" stroke-opacity="0.6" stroke-width="1.5"/>
+  <rect x="60" y="50" width="680" height="42" rx="14" fill="#0E172A"/>
+  
+  <!-- Mac Window Dots -->
+  <circle cx="88" cy="71" r="5" fill="#EF4444"/>
+  <circle cx="106" cy="71" r="5" fill="#F59E0B"/>
+  <circle cx="124" cy="71" r="5" fill="#10B981"/>
+  <text x="146" y="75" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12" font-weight="500">CloudFlow ERP — Warehouse Inventory &amp; Order Pipeline</text>
+  
+  <!-- Sidebar -->
+  <rect x="60" y="92" width="160" height="338" fill="#080D1A" stroke="#1E293B" stroke-width="1"/>
+  <rect x="76" y="116" width="128" height="28" rx="6" fill="#1E293B" fill-opacity="0.6"/>
+  <text x="96" y="134" fill="#60A5FA" font-family="system-ui, sans-serif" font-size="11" font-weight="600">📊 Overview</text>
+  <text x="96" y="172" fill="#64748B" font-family="system-ui, sans-serif" font-size="11">📦 Stock Ledger</text>
+  <text x="96" y="206" fill="#64748B" font-family="system-ui, sans-serif" font-size="11">🧾 Tax Invoicing</text>
+  <text x="96" y="240" fill="#64748B" font-family="system-ui, sans-serif" font-size="11">🔄 Sync Workers</text>
+  <text x="96" y="274" fill="#64748B" font-family="system-ui, sans-serif" font-size="11">⚙️ Settings</text>
+
+  <!-- Metric Cards -->
+  <rect x="240" y="112" width="145" height="74" rx="8" fill="#111B30" stroke="#1E293B"/>
+  <text x="256" y="132" fill="#64748B" font-family="system-ui, sans-serif" font-size="10" font-weight="600">ACTIVE ORDERS</text>
+  <text x="256" y="160" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="20" font-weight="700">14,280</text>
+  <text x="320" y="160" fill="#10B981" font-family="system-ui, sans-serif" font-size="10" font-weight="600">+12.4%</text>
+
+  <rect x="400" y="112" width="145" height="74" rx="8" fill="#111B30" stroke="#1E293B"/>
+  <text x="416" y="132" fill="#64748B" font-family="system-ui, sans-serif" font-size="10" font-weight="600">ACCURACY RATE</text>
+  <text x="416" y="160" fill="#60A5FA" font-family="system-ui, sans-serif" font-size="20" font-weight="700">99.4%</text>
+  <text x="485" y="160" fill="#10B981" font-family="system-ui, sans-serif" font-size="10" font-weight="600">Optimized</text>
+
+  <rect x="560" y="112" width="155" height="74" rx="8" fill="#111B30" stroke="#1E293B"/>
+  <text x="576" y="132" fill="#64748B" font-family="system-ui, sans-serif" font-size="10" font-weight="600">API P99 LATENCY</text>
+  <text x="576" y="160" fill="#A78BFA" font-family="system-ui, sans-serif" font-size="20" font-weight="700">125ms</text>
+  <text x="645" y="160" fill="#10B981" font-family="system-ui, sans-serif" font-size="10" font-weight="600">-78%</text>
+
+  <!-- Big Telemetry Chart Graphic -->
+  <rect x="240" y="202" width="475" height="205" rx="8" fill="#101A2E" stroke="#1E293B"/>
+  <path d="M260 360C310 340 340 280 400 290C460 300 500 230 560 250C620 270 660 220 700 215" stroke="url(#chart_line)" stroke-width="3" fill="none"/>
+  <path d="M260 360C310 340 340 280 400 290C460 300 500 230 560 250C620 270 660 220 700 215V385H260V360Z" fill="url(#chart_grad)" opacity="0.3"/>
+  <circle cx="560" cy="250" r="5" fill="#60A5FA" stroke="#1E293B" stroke-width="2"/>
+  <circle cx="700" cy="215" r="5" fill="#A855F7" stroke="#1E293B" stroke-width="2"/>
+
+  <!-- Glow definitions -->
+  <defs>
+    <radialGradient id="erp_glow" cx="0.5" cy="0.5" r="0.5">
+      <stop stop-color="#4F46E5"/>
+      <stop offset="1" stop-color="#4F46E5" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="chart_line" x1="260" y1="360" x2="700" y2="215" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3B82F6"/>
+      <stop offset="0.5" stop-color="#6366F1"/>
+      <stop offset="1" stop-color="#A855F7"/>
+    </linearGradient>
+    <linearGradient id="chart_grad" x1="480" y1="215" x2="480" y2="385" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6366F1"/>
+      <stop offset="1" stop-color="#0E172A" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>

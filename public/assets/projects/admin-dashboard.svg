@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <defs>
+    <linearGradient id="dashBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070c1b" />
+      <stop offset="50%" stop-color="#0c142c" />
+      <stop offset="100%" stop-color="#050816" />
+    </linearGradient>
+    <linearGradient id="dashAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" rx="16" fill="url(#dashBg)" />
+  <rect x="1" y="1" width="798" height="498" rx="15" stroke="rgba(129, 140, 248, 0.2)" stroke-width="1.5" />
+
+  <!-- App Frame -->
+  <g transform="translate(35, 35)">
+    <rect width="730" height="430" rx="12" fill="#090e1f" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+    <!-- Topbar -->
+    <path d="M 0 38 L 730 38" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+    <circle cx="20" cy="19" r="4.5" fill="#ef4444" />
+    <circle cx="36" cy="19" r="4.5" fill="#f59e0b" />
+    <circle cx="52" cy="19" r="4.5" fill="#10b981" />
+    <text x="365" y="23" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="middle">admin-console.internal · React Router + Tailwind</text>
+
+    <!-- Sidebar -->
+    <rect x="0" y="38" width="160" height="392" fill="#070b18" />
+    <path d="M 160 38 L 160 430" stroke="rgba(255, 255, 255, 0.06)" stroke-width="1" />
+    
+    <!-- Sidebar Items -->
+    <rect x="12" y="58" width="136" height="30" rx="6" fill="#1e293b" />
+    <text x="36" y="78" fill="#38bdf8" font-family="Inter, sans-serif" font-size="11" font-weight="600">📊 Overview</text>
+    <text x="36" y="112" fill="#94a3b8" font-family="Inter, sans-serif" font-size="11">👥 Customers</text>
+    <text x="36" y="146" fill="#94a3b8" font-family="Inter, sans-serif" font-size="11">📦 Inventory</text>
+    <text x="36" y="180" fill="#94a3b8" font-family="Inter, sans-serif" font-size="11">⚡ Analytics</text>
+    <text x="36" y="214" fill="#94a3b8" font-family="Inter, sans-serif" font-size="11">⚙️ Settings</text>
+
+    <!-- Main Dashboard Area -->
+    <g transform="translate(180, 56)">
+      <!-- Metric Cards -->
+      <rect x="0" y="0" width="164" height="74" rx="8" fill="#0f172a" stroke="rgba(56, 189, 248, 0.2)" />
+      <text x="14" y="22" fill="#94a3b8" font-family="Inter, sans-serif" font-size="10">TOTAL REVENUE</text>
+      <text x="14" y="48" fill="#ffffff" font-family="Inter, sans-serif" font-size="18" font-weight="bold">$128,450</text>
+      <text x="14" y="64" fill="#10b981" font-family="Inter, sans-serif" font-size="9">+18.4% vs last month</text>
+
+      <rect x="180" y="0" width="164" height="74" rx="8" fill="#0f172a" stroke="rgba(255, 255, 255, 0.06)" />
+      <text x="194" y="22" fill="#94a3b8" font-family="Inter, sans-serif" font-size="10">ACTIVE SESSIONS</text>
+      <text x="194" y="48" fill="#ffffff" font-family="Inter, sans-serif" font-size="18" font-weight="bold">1,842</text>
+      <text x="194" y="64" fill="#38bdf8" font-family="Inter, sans-serif" font-size="9">384 live right now</text>
+
+      <rect x="360" y="0" width="164" height="74" rx="8" fill="#0f172a" stroke="rgba(255, 255, 255, 0.06)" />
+      <text x="374" y="22" fill="#94a3b8" font-family="Inter, sans-serif" font-size="10">CONVERSION RATE</text>
+      <text x="374" y="48" fill="#ffffff" font-family="Inter, sans-serif" font-size="18" font-weight="bold">4.62%</text>
+      <text x="374" y="64" fill="#a855f7" font-family="Inter, sans-serif" font-size="9">+0.8% target reached</text>
+
+      <!-- Chart View -->
+      <rect x="0" y="90" width="524" height="150" rx="8" fill="#0e162d" stroke="rgba(255, 255, 255, 0.06)" />
+      <text x="16" y="112" fill="#ffffff" font-family="Inter, sans-serif" font-size="12" font-weight="600">Throughput &amp; Order Volume</text>
+      <!-- Chart line and points -->
+      <polyline points="30,210 90,185 160,195 230,150 300,165 380,130 450,140 500,115" fill="none" stroke="#38bdf8" stroke-width="3" />
+      <polygon points="30,210 90,185 160,195 230,150 300,165 380,130 450,140 500,115 500,225 30,225" fill="#38bdf8" opacity="0.1" />
+      <circle cx="500" cy="115" r="4.5" fill="#38bdf8" />
+
+      <!-- Data Table Preview -->
+      <rect x="0" y="254" width="524" height="100" rx="8" fill="#0e162d" stroke="rgba(255, 255, 255, 0.06)" />
+      <text x="16" y="274" fill="#94a3b8" font-family="Inter, sans-serif" font-size="10">ORDER ID</text>
+      <text x="120" y="274" fill="#94a3b8" font-family="Inter, sans-serif" font-size="10">CLIENT</text>
+      <text x="260" y="274" fill="#94a3b8" font-family="Inter, sans-serif" font-size="10">STATUS</text>
+      <text x="440" y="274" fill="#94a3b8" font-family="Inter, sans-serif" font-size="10">AMOUNT</text>
+
+      <text x="16" y="298" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="10">#ORD-9024</text>
+      <text x="120" y="298" fill="#ffffff" font-family="Inter, sans-serif" font-size="10">Acme Global</text>
+      <text x="260" y="298" fill="#10b981" font-family="Inter, sans-serif" font-size="10">● Completed</text>
+      <text x="440" y="298" fill="#ffffff" font-family="Inter, sans-serif" font-size="10 font-weight=bold">$2,840.00</text>
+
+      <text x="16" y="324" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="10">#ORD-9025</text>
+      <text x="120" y="324" fill="#ffffff" font-family="Inter, sans-serif" font-size="10">Apex Labs Inc</text>
+      <text x="260" y="324" fill="#f59e0b" font-family="Inter, sans-serif" font-size="10">● Processing</text>
+      <text x="440" y="324" fill="#ffffff" font-family="Inter, sans-serif" font-size="10 font-weight=bold">$1,290.00</text>
+    </g>
+  </g>
+</svg>
