@@ -22,7 +22,7 @@ export const DeveloperIllustration = ({ className = "" }) => {
         <div className="relative w-full h-full rounded-2xl overflow-hidden bg-gradient-to-b from-[#0e162d] to-[#050816] flex items-center justify-center">
           <img
             src={getAssetUrl(personalData.profileImage)}
-            alt={`${personalData.name} - React.js & JavaScript Developer`}
+            alt={`${personalData.name} - Full Stack Developer`}
             className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
             loading="eager"
             onError={(e) => {
@@ -42,14 +42,14 @@ export const DeveloperIllustration = ({ className = "" }) => {
                 {personalData.name}
               </span>
               <span className="text-[10px] font-mono text-sky-400 hidden sm:inline">
-                · REACT.JS
+                · FULL STACK
               </span>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Floating Pill Tag 1: React.js Developer */}
+      {/* Floating Pill Tag 1: Full Stack MERN */}
       <motion.div
         animate={{ y: [0, -6, 0] }}
         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
@@ -57,11 +57,11 @@ export const DeveloperIllustration = ({ className = "" }) => {
       >
         <Atom className="w-3.5 h-3.5 text-sky-400 animate-spin-slow" />
         <span className="text-[11px] font-mono font-semibold text-slate-200 uppercase tracking-wider">
-          REACT.JS &amp; ES6+
+          MERN STACK &amp; ES6+
         </span>
       </motion.div>
 
-      {/* Floating Pill Tag 2: Modern Frontend */}
+      {/* Floating Pill Tag 2: Backend Architecture */}
       <motion.div
         animate={{ y: [0, 6, 0] }}
         transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
@@ -69,18 +69,18 @@ export const DeveloperIllustration = ({ className = "" }) => {
       >
         <Sparkles className="w-3.5 h-3.5 text-purple-400" />
         <span className="text-[11px] font-mono font-semibold text-slate-200 uppercase tracking-wider">
-          MODERN FRONTEND
+          NODE · EXPRESS · MONGO
         </span>
       </motion.div>
 
-      {/* Floating Pill Tag 3: State & UI */}
+      {/* Floating Pill Tag 3: APIs & Security */}
       <motion.div
         animate={{ x: [0, 6, 0] }}
         transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
         className="hidden sm:flex absolute top-1/2 -right-6 z-20 items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#091024]/95 border border-indigo-500/40 text-[10px] font-mono text-sky-300 backdrop-blur-md shadow-lg"
       >
         <Layers className="w-3.5 h-3.5 text-indigo-400" />
-        <span>REDUCERS · HOOKS</span>
+        <span>REST APIS · JWT RBAC</span>
       </motion.div>
     </div>
   );

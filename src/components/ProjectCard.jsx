@@ -48,12 +48,24 @@ export const ProjectCard = ({ project, featured = false }) => {
       {/* Content Section */}
       <div className={`flex flex-col justify-between ${featured ? "lg:col-span-5 space-y-4" : "flex-1"}`}>
         <div>
-          {featured && (
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-mono uppercase tracking-wider bg-sky-500/10 border border-sky-500/30 text-sky-300 mb-2">
-              <Sparkles className="w-3.5 h-3.5 text-sky-400" />
-              <span>FEATURED PROJECT</span>
-            </div>
-          )}
+          <div className="flex flex-wrap items-center gap-2 mb-2.5">
+            {featured && (
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-mono uppercase tracking-wider bg-sky-500/10 border border-sky-500/30 text-sky-300">
+                <Sparkles className="w-3.5 h-3.5 text-sky-400" />
+                <span>FEATURED MERN</span>
+              </div>
+            )}
+            {project.year && (
+              <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-mono uppercase bg-white/[0.06] border border-white/[0.12] text-sky-300 font-bold">
+                {project.year}
+              </span>
+            )}
+            {project.category && (
+              <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-mono uppercase bg-purple-500/10 border border-purple-500/20 text-purple-300">
+                {project.category}
+              </span>
+            )}
+          </div>
 
           <h3
             className={`font-bold text-white tracking-tight group-hover:text-sky-300 transition-colors ${

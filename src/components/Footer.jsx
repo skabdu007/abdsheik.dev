@@ -26,10 +26,10 @@ export const Footer = () => {
               </span>
             </Link>
             <p className="text-xs font-mono text-sky-400 uppercase tracking-widest font-semibold">
-              REACT.JS DEVELOPER
+              FULL STACK DEVELOPER
             </p>
             <p className="text-xs text-slate-500 mt-1 max-w-sm">
-              Modern frontend engineering with React.js, JavaScript ES6+, and scalable architectures.
+              Scalable full stack engineering with React.js, Node.js, Express.js, MongoDB, and RESTful APIs.
             </p>
           </div>
 

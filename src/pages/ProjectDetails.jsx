@@ -22,8 +22,9 @@ import { getAssetUrl } from "@/lib/utils";
 
 export const ProjectDetails = () => {
   const { slug } = useParams();
-  const navigate = useNavigate();
-  const project = projectsData.find((p) => p.slug === slug);
+  const project = projectsData.find(
+    (p) => p.slug === slug || (p.aliases && p.aliases.includes(slug))
+  );
 
   useEffect(() => {
     window.scrollTo(0, 0);

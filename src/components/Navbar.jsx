@@ -78,15 +78,23 @@ export const Navbar = () => {
           className="flex items-center gap-2.5 group focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 rounded-lg"
           aria-label="Home"
         >
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-sky-500/20 to-indigo-600/20 border border-sky-500/30 flex items-center justify-center text-sky-400 group-hover:scale-105 group-hover:border-sky-400 transition-all shadow-glow-sm">
-            <Code2 className="w-5 h-5" />
+          <div className="w-10 h-10 rounded-xl overflow-hidden bg-[#091024] border border-sky-500/30 flex items-center justify-center group-hover:scale-105 group-hover:border-sky-400 transition-all shadow-glow-sm shrink-0">
+            <img
+              src={getAssetUrl(personalData.profileImage)}
+              alt={personalData.name}
+              className="w-full h-full object-cover"
+              onError={(e) => {
+                e.currentTarget.onerror = null;
+                e.currentTarget.src = getAssetUrl("/developer-avatar.png");
+              }}
+            />
           </div>
           <div className="flex flex-col">
             <span className="font-mono font-black text-sm sm:text-base tracking-wider text-white group-hover:text-sky-300 transition-colors uppercase">
               {personalData.name}
             </span>
             <span className="text-[10px] font-mono tracking-widest text-sky-400/90 uppercase -mt-0.5">
-              REACT.JS DEVELOPER
+              FULL STACK DEVELOPER
             </span>
           </div>
         </Link>

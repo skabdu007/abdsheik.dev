@@ -1,209 +1,191 @@
 export const skillCategories = [
   "All",
-  "Core Technologies",
-  "React Ecosystem",
-  "Styling",
-  "API & Data",
-  "Tools",
-  "Concepts"
+  "Frontend",
+  "Backend",
+  "Database",
+  "Languages",
+  "Tools & IDE",
+  "AI Tools"
 ];
 
 export const skillsData = [
-  // CORE TECHNOLOGIES
+  // FRONTEND
   {
     name: "React.js",
-    category: "Core Technologies",
+    category: "Frontend",
     iconName: "Atom",
-    description: "Declarative UI, functional components, custom hooks, and virtual DOM reconciliation"
+    description: "Component architecture, React Hooks, virtual DOM reconciliation, and modern frontend state"
   },
   {
-    name: "JavaScript ES6+",
-    category: "Core Technologies",
+    name: "JavaScript (ES6+)",
+    category: "Frontend",
     iconName: "Code2",
-    description: "Modern ES6+ syntax, destructuring, modules, closures, and event loop mechanics"
+    description: "Modern ES6+ syntax, async/await, closures, promises, event loop, and modular patterns"
   },
   {
     name: "HTML5",
-    category: "Core Technologies",
+    category: "Frontend",
     iconName: "Layout",
-    description: "Semantic elements, web accessibility (WCAG), metadata, and SEO structure"
+    description: "Semantic elements, web accessibility (WCAG), metadata, and SEO-friendly document structure"
   },
   {
     name: "CSS3",
-    category: "Core Technologies",
+    category: "Frontend",
     iconName: "Palette",
-    description: "Modern CSS Grid, Flexbox, custom properties, animations, and transitions"
-  },
-
-  // REACT ECOSYSTEM
-  {
-    name: "React Hooks",
-    category: "React Ecosystem",
-    iconName: "Workflow",
-    description: "useState, useEffect, useMemo, useCallback, useRef, and custom reusable hook abstractions"
+    description: "CSS Grid, Flexbox layouts, custom animations, transitions, and responsive fluid design"
   },
   {
-    name: "React Router",
-    category: "React Ecosystem",
-    iconName: "Network",
-    description: "Client-side routing, dynamic segment parameters, nested routes, and navigation guards"
-  },
-  {
-    name: "Redux Toolkit",
-    category: "React Ecosystem",
-    iconName: "Boxes",
-    description: "Predictable centralized state management with slices, reducers, and async thunks"
-  },
-  {
-    name: "Context API",
-    category: "React Ecosystem",
-    iconName: "Layers",
-    description: "Global application state distribution without prop-drilling across component trees"
-  },
-  {
-    name: "TanStack Query",
-    category: "React Ecosystem",
-    iconName: "Zap",
-    description: "Server-state caching, automatic refetching, deduplication, and optimistic mutations"
+    name: "Tailwind CSS",
+    category: "Frontend",
+    iconName: "Palette",
+    description: "Utility-first design system, responsive breakpoints, dark mode styling, and custom theme tokens"
   },
   {
     name: "Vite",
-    category: "React Ecosystem",
+    category: "Frontend",
     iconName: "Sparkles",
-    description: "Lightning-fast HMR, ESM bundling, and optimized production builds"
+    description: "Lightning-fast modern frontend build tooling, hot module replacement, and production bundling"
   },
 
-  // STYLING
+  // BACKEND
   {
-    name: "Tailwind CSS",
-    category: "Styling",
-    iconName: "Palette",
-    description: "Utility-first design, custom theme extensions, dark mode, and responsive variants"
+    name: "Node.js",
+    category: "Backend",
+    iconName: "Zap",
+    description: "Asynchronous runtime, non-blocking I/O, event emitters, middleware, and microservice APIs"
   },
   {
-    name: "CSS3 & Modern Layouts",
-    category: "Styling",
-    iconName: "Layout",
-    description: "Complex responsive grid systems, flexbox alignment, and fluid typographic scales"
-  },
-  {
-    name: "Sass / SCSS",
-    category: "Styling",
-    iconName: "Layers",
-    description: "Modular stylesheets, variables, mixins, nesting, and design token integration"
-  },
-  {
-    name: "Responsive Design",
-    category: "Styling",
-    iconName: "Laptop",
-    description: "Mobile-first viewports, fluid media queries, touch gestures, and cross-browser parity"
-  },
-
-  // API & DATA
-  {
-    name: "REST API",
-    category: "API & Data",
+    name: "Express.js",
+    category: "Backend",
     iconName: "Network",
-    description: "HTTP verbs, RESTful contracts, resource modeling, and error status handling"
+    description: "RESTful API routing, JSON body parsers, CORS handlers, error traps, and route authentication"
   },
   {
-    name: "Axios",
-    category: "API & Data",
+    name: "RESTful APIs",
+    category: "Backend",
     iconName: "Send",
-    description: "Promise-based HTTP client with request/response interceptors and timeout guards"
+    description: "HTTP verbs (GET, POST, PUT, DELETE), JSON payload contracts, and error status handling"
   },
   {
-    name: "Fetch API",
-    category: "API & Data",
-    iconName: "Globe",
-    description: "Native asynchronous browser networking with streaming responses and headers"
-  },
-  {
-    name: "JSON",
-    category: "API & Data",
-    iconName: "FileCode2",
-    description: "Data serialization, deserialization, schema modeling, and payload validation"
-  },
-  {
-    name: "Async/Await",
-    category: "API & Data",
+    name: "JWT Authentication & RBAC",
+    category: "Backend",
     iconName: "Activity",
-    description: "Non-blocking asynchronous control flow, promise chaining, and error trapping"
+    description: "Secure token signing, verification, and role-based access control (Admin / Vendor / User)"
+  },
+  {
+    name: "Stored Procedures & LINQ",
+    category: "Backend",
+    iconName: "Workflow",
+    description: "Optimized stored procedures for data manipulation, query optimization, and LINQ queries"
   },
 
-  // TOOLS
+  // DATABASE
   {
-    name: "Git",
-    category: "Tools",
-    iconName: "GitBranch",
-    description: "Distributed version control, branching strategies, rebase, and commit history"
-  },
-  {
-    name: "GitHub",
-    category: "Tools",
-    iconName: "GitFork",
-    description: "Collaborative code reviews, pull requests, issues, and GitHub Actions CI/CD"
-  },
-  {
-    name: "npm",
-    category: "Tools",
+    name: "MongoDB",
+    category: "Database",
     iconName: "Boxes",
-    description: "Package dependency management, semantic versioning, and script automation"
+    description: "NoSQL document database, Mongoose ORM, schema modeling, indexing, and aggregation pipelines"
+  },
+  {
+    name: "MySQL",
+    category: "Database",
+    iconName: "Layers",
+    description: "Relational database design, foreign keys, table joins, normalized schemas, and ACID transactions"
+  },
+  {
+    name: "MS SQL Server",
+    category: "Database",
+    iconName: "HardDriveDownload",
+    description: "Enterprise relational database management, indexing strategies, and transactional queries"
+  },
+
+  // LANGUAGES
+  {
+    name: "C#",
+    category: "Languages",
+    iconName: "Code2",
+    description: "Object-oriented programming, .NET fundamentals, LINQ syntax, and strongly-typed architectures"
+  },
+  {
+    name: "SQL",
+    category: "Languages",
+    iconName: "FileCode2",
+    description: "Relational query language, DDL/DML, complex multi-table joins, views, and aggregate functions"
+  },
+  {
+    name: "JavaScript",
+    category: "Languages",
+    iconName: "Code2",
+    description: "Full-stack language for browser frontend logic, runtime node scripting, and asynchronous I/O"
+  },
+  {
+    name: "Python",
+    category: "Languages",
+    iconName: "FileCode",
+    description: "Algorithmic scripting, computational automation, data manipulation, and backend routines"
+  },
+  {
+    name: "Java",
+    category: "Languages",
+    iconName: "Cpu",
+    description: "Object-oriented design patterns, inheritance, polymorphism, and computational data structures"
+  },
+  {
+    name: "PHP",
+    category: "Languages",
+    iconName: "Globe",
+    description: "Server-side scripting, session handling, MySQL database drivers, and CRUD operations"
+  },
+
+  // TOOLS & IDE
+  {
+    name: "Git & GitHub",
+    category: "Tools & IDE",
+    iconName: "GitBranch",
+    description: "Distributed version control, branch management, collaborative pull requests, and CI/CD hosting"
+  },
+  {
+    name: "Postman",
+    category: "Tools & IDE",
+    iconName: "Send",
+    description: "RESTful API testing, endpoint payload validation, environment variables, and auth token testing"
   },
   {
     name: "VS Code",
-    category: "Tools",
+    category: "Tools & IDE",
     iconName: "Terminal",
-    description: "Configured workspace extensions, debugging consoles, and snippet productivity"
+    description: "Configured full stack development environment, debugging consoles, and terminal tooling"
   },
   {
-    name: "Chrome DevTools",
-    category: "Tools",
+    name: "Visual Studio & SSMS",
+    category: "Tools & IDE",
     iconName: "Gauge",
-    description: "React DevTools profiling, network inspection, DOM diagnostics, and Lighthouse audits"
+    description: "SQL Server Management Studio for database administration, query profiling, and .NET tooling"
   },
   {
-    name: "Figma",
-    category: "Tools",
-    iconName: "Layout",
-    description: "Design system inspection, wireframing, spacing tokens, and component translation"
+    name: "Antigravity IDE",
+    category: "Tools & IDE",
+    iconName: "Sparkles",
+    description: "Advanced agentic AI pair programming environment with integrated browser automation"
   },
 
-  // CONCEPTS
+  // AI TOOLS
   {
-    name: "Components & Props",
-    category: "Concepts",
-    iconName: "Boxes",
-    description: "Composable, pure functional UI building blocks with strictly validated props"
+    name: "ChatGPT & Codex",
+    category: "AI Tools",
+    iconName: "Sparkles",
+    description: "AI-assisted code development, architecture refactoring, and automated test synthesis"
   },
   {
-    name: "State & Lifecycle",
-    category: "Concepts",
-    iconName: "Activity",
-    description: "Predictable state transitions, side-effect isolation, and clean cleanup patterns"
-  },
-  {
-    name: "Hooks & Abstractions",
-    category: "Concepts",
-    iconName: "Workflow",
-    description: "Encapsulated business logic separated cleanly from presentational components"
-  },
-  {
-    name: "Promises & Async Flow",
-    category: "Concepts",
+    name: "Claude AI & DeepSeek",
+    category: "AI Tools",
     iconName: "Zap",
-    description: "Microtask queues, Promise.all orchestration, and resilient exception handling"
+    description: "High-reasoning code analysis, algorithmic design optimization, and documentation generation"
   },
   {
-    name: "DOM & Event Handling",
-    category: "Concepts",
-    iconName: "Cpu",
-    description: "Synthetic event delegation, event bubbling, debouncing, and direct ref interaction"
-  },
-  {
-    name: "Performance Optimization",
-    category: "Concepts",
-    iconName: "Gauge",
-    description: "Lazy loading, code splitting, memoization, and bundle size reduction"
+    name: "Google Gemini",
+    category: "AI Tools",
+    iconName: "Atom",
+    description: "Multimodal AI assistance for developer workflows, query generation, and code review"
   }
 ];

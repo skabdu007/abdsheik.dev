@@ -1,34 +1,37 @@
 export const experienceData = [
   {
     id: "exp-1",
-    role: "Frontend & React.js Developer Intern",
+    role: "MERN Stack Developer Intern",
     company: "Friendzion Technologies",
     location: "Tamil Nadu, India",
-    duration: "2025 - Present",
+    duration: "July 2026 – Present",
+    year: "2026",
     isCurrent: true,
     type: "Internship",
-    description: "Spearheaded frontend architecture and reusable React component development for corporate web portals and industrial monitoring dashboards.",
+    description: "Worked as a MERN Stack Developer Intern on commercial web application projects for Biopure STP and Frametronix Global.",
     responsibilities: [
-      "Developed reusable, composable React.js components with clean props interfaces and custom hooks.",
-      "Built responsive, accessible user interfaces following mobile-first principles with Tailwind CSS.",
-      "Integrated asynchronous REST APIs using Axios and Fetch API with comprehensive error handling.",
-      "Implemented client-side state management, form validation workflows, and dynamic UI state handling.",
-      "Improved frontend performance by optimizing render cycles, lazy loading assets, and minimizing DOM operations.",
-      "Collaborated actively in sprint planning, code reviews, and version control workflows using Git and GitHub."
+      "Worked as a MERN Stack Developer Intern on web application projects for Biopure STP and Frametronix Global.",
+      "Developed responsive and user-friendly web interfaces using React.js, JavaScript, HTML5, and CSS3.",
+      "Built and integrated RESTful APIs using Node.js and Express.js for application functionality and data management.",
+      "Worked with MongoDB for database design, CRUD operations, data modeling, and application data management.",
+      "Implemented reusable React components, routing, form validation, API integration, and dynamic UI functionality.",
+      "Contributed to debugging, testing, performance improvements, and resolving frontend and backend issues.",
+      "Used Git and GitHub for version control and collaborative development."
     ],
     achievements: [
-      "Engineered the core telemetry dashboard for the Biopure STP industrial web application.",
-      "Created modular component systems for Frametronix Global, reducing re-rendering overhead by 35%.",
-      "Awarded Certificate of Excellence for proactive technical problem resolution and clean code standards."
+      "Engineered core web application modules for Biopure STP using the MERN Stack.",
+      "Delivered responsive frontend modules and integrated APIs for Frametronix Global.",
+      "Recognized for strong technical contribution, problem-solving, and collaborative teamwork."
     ],
     technologies: [
+      "MongoDB",
+      "Express.js",
       "React.js",
+      "Node.js",
       "JavaScript",
+      "RESTful APIs",
       "HTML5",
       "CSS3",
-      "Tailwind CSS",
-      "REST API",
-      "Axios",
       "Git",
       "GitHub"
     ]
@@ -38,31 +41,35 @@ export const experienceData = [
     role: "Web Development Intern",
     company: "DCE Technology",
     location: "Virudhunagar, Tamil Nadu, India",
-    duration: "2024 - 2025",
+    duration: "Jan 2026 – Apr 2026",
+    year: "2026",
     isCurrent: false,
     type: "Internship",
-    description: "Engineered single-page application interfaces, client routing, and dynamic data visualization for e-commerce and live bidding systems.",
+    description: "Developed and maintained a full-stack MERN Stack e-commerce platform with real-time auction bidding and role-based access control.",
     responsibilities: [
-      "Constructed dynamic single-page web applications utilizing React.js, React Router, and modern JavaScript.",
-      "Built interactive product catalogs, real-time bid validation interfaces, and responsive checkout flows.",
-      "Connected client components with backend RESTful services using JSON payloads and asynchronous promises.",
-      "Ensured cross-browser compatibility and seamless mobile responsiveness across diverse viewport sizes.",
-      "Documented software component architecture, endpoint specifications, and integration test scenarios."
+      "Developed and maintained a full-stack MERN Stack e-commerce platform.",
+      "Implemented secure user authentication using JWT tokens and Role-Based Access Control (RBAC).",
+      "Designed and integrated RESTful APIs for product listings, user management, and live bidding operations.",
+      "Built a real-time auction and bidding system with dynamic highest-bid validation logic.",
+      "Worked with MongoDB for database design, schema management, and query optimization.",
+      "Conducted debugging, testing, and issue resolution to improve application stability.",
+      "Collaborated with team members using Git and GitHub-based development workflows."
     ],
     achievements: [
-      "Implemented a real-time highest-bid validation client interface with instant countdown timers.",
-      "Designed role-based view permissions providing distinct experiences for Admins and Customers.",
-      "Delivered complete milestone features ahead of schedule with 100% test reliability."
+      "Engineered a real-time highest-bid validation engine with timer countdown logic.",
+      "Architected granular Role-Based Access Control (Admin / Vendor / User).",
+      "Normalized MongoDB schemas for users, products, bids, and order processing."
     ],
     technologies: [
+      "MongoDB",
+      "Express.js",
       "React.js",
-      "JavaScript",
-      "React Router",
-      "REST API",
-      "Tailwind CSS",
-      "HTML5",
-      "CSS3",
-      "Git"
+      "Node.js",
+      "JWT Authentication",
+      "RBAC",
+      "RESTful APIs",
+      "Git",
+      "GitHub"
     ]
   }
 ];

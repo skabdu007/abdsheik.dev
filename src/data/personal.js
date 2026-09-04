@@ -1,45 +1,45 @@
 export const personalData = {
   name: "SHEIK ABDULLA S",
-  role: "React.js & JavaScript Developer",
-  badge: "REACT.JS DEVELOPER",
-  headline: "Building Modern, Responsive & High-Performance Web Applications",
-  bio: "Frontend developer focused on building modern, responsive and high-performance web applications using React.js, JavaScript and modern frontend technologies.",
+  role: "Full Stack Developer",
+  badge: "FULL STACK DEVELOPER",
+  headline: "Full Stack MERN Developer · MCA Graduate",
+  bio: "Motivated and detail-oriented Full Stack Developer & fresh MCA Graduate with strong expertise in backend architecture, RESTful APIs, Node.js, Express.js, MongoDB, and modern React.js.",
   about: {
     heading: "ABOUT ME",
-    statement: "BUILDING MODERN WEB EXPERIENCES WITH REACT & JAVASCRIPT.",
+    statement: "BUILDING SCALABLE FULL STACK & MERN APPLICATIONS.",
     paragraphs: [
-      "I am a passionate React.js and JavaScript Developer specializing in engineering scalable, modular frontend architectures. I focus on creating declarative component hierarchies, dynamic UI states, and fluid animations that deliver exceptional user experiences.",
-      "With hands-on experience building modern single-page applications, custom e-commerce interfaces, and telemetry dashboards, I bridge clean visual design with resilient asynchronous workflows and RESTful API integrations.",
-      "My core philosophy centers on reusable component design, strict accessibility standards, performance optimization, and clean, maintainable ES6+ code. I leverage Vite, Tailwind CSS, Redux Toolkit, Context API, and Framer Motion to build production-grade web applications."
+      "I am a motivated and detail-oriented MERN Stack Developer and fresh MCA Graduate seeking an entry-level Software Developer / Full Stack Developer role where I can apply my knowledge of backend architecture, RESTful APIs, and modern JavaScript frameworks to deliver high-quality web solutions.",
+      "With hands-on experience building full-stack applications—including a Fashion E-Commerce platform with a real-time bidding auction engine, corporate web portals for Biopure STP and Frametronix Global, and robust administrative systems—I bridge scalable backend APIs with clean, responsive user interfaces.",
+      "My technical foundation centers on MongoDB database design, Express.js and Node.js RESTful API engineering, JWT-based authentication with Role-Based Access Control (RBAC), and high-performance React.js frontend architectures."
     ],
     stats: [
       {
         value: "05+",
         label: "PROJECTS",
-        description: "Production-grade React & JavaScript applications"
+        description: "Full Stack MERN & Web Applications (2024–2026)"
       },
       {
-        value: "02+",
-        label: "YEARS EXPERIENCE",
-        description: "Hands-on frontend engineering & web development"
+        value: "2026",
+        label: "MCA GRADUATE",
+        description: "Master of Computer Applications (CGPA: 6.30)"
+      },
+      {
+        value: "02",
+        label: "INTERNSHIPS",
+        description: "Friendzion Technologies & DCE Technology"
       },
       {
         value: "10+",
-        label: "TECHNOLOGIES",
-        description: "React ecosystem, modern tooling & state libraries"
-      },
-      {
-        value: "05+",
-        label: "CERTIFICATIONS",
-        description: "Verified frontend & web development credentials"
+        label: "TECH STACK",
+        description: "React, Node, Express, MongoDB, SQL, C#"
       }
     ]
   },
   contact: {
     email: "abdsheik.dev@gmail.com",
     phone: "+91 9789644686",
-    location: "India",
-    availability: "Available for React.js & Frontend Developer Roles",
+    location: "Virudhunagar, Tamil Nadu, India",
+    availability: "Available for Full Stack Developer & Software Engineering Roles",
     github: "https://github.com/skabdu007",
     linkedin: "https://linkedin.com/in/skabd2004",
     githubUsername: "skabdu007",
@@ -47,33 +47,33 @@ export const personalData = {
     repoUrl: "https://github.com/skabdu007/abdsheik.dev",
     liveUrl: "https://skabdu007.github.io/abdsheik.dev/"
   },
-  resumeUrl: "/Resume/SHEIK%20ABDULLA_CV.pdf",
+  resumeUrl: "/Resume/SHEIK_ABDULLA_CV.pdf",
   profileImage: "/assets/profile.png",
   deliverables: {
     resume: {
       title: "SHEIK ABDULLA S - Curriculum Vitae",
-      subtitle: "React.js & Frontend Developer · MCA Graduate",
-      url: "/Resume/SHEIK%20ABDULLA_CV.pdf",
+      subtitle: "Full Stack Developer · MCA Graduate (2024–2026)",
+      url: "/Resume/SHEIK_ABDULLA_CV.pdf",
       size: "185 KB",
       downloadName: "SHEIK_ABDULLA_CV.pdf",
       highlights: [
-        "MCA Post-Graduate (VHN Senthikumara Nadar College)",
+        "MCA Post-Graduate (VHN Senthikumara Nadar College, 2024–2026)",
         "2 Industry Internships (Friendzion Technologies & DCE Technology)",
-        "React.js, JavaScript (ES6+), Redux Toolkit, REST APIs",
-        "Production deployment & responsive frontend architectures"
+        "Full Stack MERN: React.js, Node.js, Express.js, MongoDB",
+        "RESTful APIs, JWT Authentication, RBAC & Real-Time Bidding"
       ]
     },
     doc: {
       title: "Fashion E-Commerce & Auction Platform - Project Report",
-      subtitle: "Full Software Engineering Documentation & Architecture",
+      subtitle: "Full Software Engineering Documentation & Architecture (7.0 MB)",
       url: "/Doc/fashion_e_com_preview.pdf",
       size: "7.0 MB",
       downloadName: "fashion_e_com_preview.pdf",
       highlights: [
-        "Complete System Architecture & Database Schema",
+        "Complete System Architecture & Normalized MongoDB Schemas",
         "Data Flow Diagrams (DFD Level 0, 1, 2) & Use Cases",
-        "REST API Specifications & Security Implementation",
-        "Frontend component trees & state management design"
+        "REST API Specifications & JWT Role-Based Access Control",
+        "Real-Time Bidding Engine & High-Concurrency Handlers"
       ]
     },
     ppt: {
@@ -83,10 +83,10 @@ export const personalData = {
       size: "6.6 MB",
       downloadName: "24spca043_fashion_E-Com.pptx",
       highlights: [
-        "Executive Project Summary & Problem Statement",
-        "Architecture Stack (React.js, Node.js, Express, MongoDB)",
-        "Live Demonstration Walkthrough & Feature Matrices",
-        "Candidate Registration: 24SPCA043 defense slides"
+        "Executive Project Summary & Architecture Workflows",
+        "MERN Stack (MongoDB, Express.js, React.js, Node.js)",
+        "Dynamic Highest-Bid Validation Logic & Live Demonstration",
+        "Candidate Registration: 24SPCA043 Defense Presentation"
       ]
     }
   }

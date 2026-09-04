@@ -22,12 +22,12 @@ import { getAssetUrl } from "@/lib/utils";
 export const Hero = () => {
   const techBadges = [
     { name: "React.js", icon: Atom },
+    { name: "Node.js", icon: Zap },
+    { name: "Express.js", icon: Network },
+    { name: "MongoDB", icon: Layout },
     { name: "JavaScript", icon: Code2 },
-    { name: "Vite", icon: Zap },
-    { name: "HTML5", icon: Layout },
-    { name: "CSS3", icon: Palette },
     { name: "Tailwind CSS", icon: Palette },
-    { name: "React Router", icon: Network },
+    { name: "Vite", icon: Sparkles },
   ];
 
   return (
@@ -50,11 +50,11 @@ export const Hero = () => {
             transition={{ duration: 0.7, ease: [0.21, 0.47, 0.32, 0.98] }}
             className="lg:col-span-6 xl:col-span-6 space-y-6 text-center lg:text-left"
           >
-            {/* Small Pill: REACT.JS DEVELOPER */}
+            {/* Small Pill: FULL STACK DEVELOPER */}
             <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-sky-500/30 bg-sky-500/10 text-sky-300 text-xs font-semibold tracking-widest uppercase shadow-glow-sm">
               <span className="w-2 h-2 rounded-full bg-sky-400 animate-ping" />
               <Sparkles className="w-3.5 h-3.5 text-sky-400" />
-              <span>{personalData.badge || "REACT.JS DEVELOPER"}</span>
+              <span>{personalData.badge || "FULL STACK DEVELOPER"}</span>
             </div>
 
             {/* Large Heading: YOUR NAME */}
@@ -62,18 +62,18 @@ export const Hero = () => {
               {personalData.name}
             </h2>
 
-            {/* Main Title: REACT.JS & JAVASCRIPT DEVELOPER */}
+            {/* Main Title: FULL STACK & MERN STACK DEVELOPER */}
             <h1 className="text-4xl sm:text-5xl xl:text-6xl font-black uppercase tracking-tight text-white leading-[1.08]">
-              REACT.JS &amp; <br />
+              FULL STACK &amp; <br />
               <span className="text-gradient-accent">
-                JAVASCRIPT
+                MERN STACK
               </span> <br />
               DEVELOPER
             </h1>
 
             {/* Short Professional Description */}
             <p className="text-sm sm:text-base text-slate-300 max-w-xl mx-auto lg:mx-0 leading-relaxed font-normal">
-              Frontend developer focused on building modern, responsive and high-performance web applications using React.js, JavaScript and modern frontend technologies.
+              Motivated MERN Stack Developer &amp; fresh MCA Graduate specializing in scalable backend architecture, RESTful APIs, Node.js, Express.js, MongoDB, and modern React.js.
             </p>
 
             {/* Action Buttons: CONTACT ME & DOWNLOAD CV */}

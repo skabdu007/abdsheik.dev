@@ -7,55 +7,63 @@ export const CodeWindow = ({ className = "" }) => {
   const [copied, setCopied] = useState(false);
   const [activeTab, setActiveTab] = useState("component");
 
-  const componentSnippet = `// Developer.jsx
+  const componentSnippet = `// FullStackDeveloper.jsx
 import React, { useState, useEffect } from "react";
 
-export function ReactDeveloper() {
-  const [status, setStatus] = useState("Building Web Apps");
+export function FullStackDeveloper() {
+  const [status, setStatus] = useState("Building Scalable Full Stack Apps");
 
   const developer = {
     name: "${personalData.name}",
-    role: "React.js & JavaScript Developer",
+    role: "Full Stack Developer",
+    stack: ["MongoDB", "Express.js", "React.js", "Node.js"],
     skills: [
       "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
       "JavaScript ES6+",
-      "Vite",
-      "Tailwind CSS",
-      "Redux Toolkit"
+      "RESTful APIs",
+      "SQL & C#"
     ],
-    focus: "Modern Frontend Architecture",
+    education: "MCA Graduate (2024 - 2026)",
+    location: "Virudhunagar, Tamil Nadu",
     isAvailable: true
   };
 
   return (
-    <PortfolioApp
+    <FullStackApp
       developer={developer}
       status={status}
-      language="JavaScript"
+      stack="MERN Stack"
     />
   );
 }`;
 
-  const hookSnippet = `// usePortfolio.js
-import { useMemo, useCallback } from "react";
+  const backendSnippet = `// apiServer.js (Node.js + Express + MongoDB)
+import express from "express";
+import mongoose from "mongoose";
 
-export const usePortfolio = (projects, filters) => {
-  // Memoized filter calculation for ultra-fast rendering
-  const activeProjects = useMemo(() => {
-    return projects.filter(item => 
-      filters.category === "All" || 
-      item.technologies.includes(filters.category)
-    );
-  }, [projects, filters]);
+const router = express.Router();
 
-  const handleLaunch = useCallback((slug) => {
-    console.log(\`Launching React Case Study: \${slug}\`);
-  }, []);
+// Real-Time MERN Auction & Bid Validation Endpoint
+router.post("/api/auctions/:id/bid", async (req, res) => {
+  const { amount, bidderId } = req.body;
+  const auction = await Auction.findById(req.params.id);
 
-  return { activeProjects, handleLaunch };
-};`;
+  // Dynamic highest-bid validation logic
+  if (amount <= (auction.currentHighestBid || 0)) {
+    return res.status(400).json({ error: "Bid must exceed highest current bid" });
+  }
 
-  const currentCode = activeTab === "component" ? componentSnippet : hookSnippet;
+  auction.currentHighestBid = amount;
+  auction.highestBidder = bidderId;
+  await auction.save();
+
+  return res.status(200).json({ success: true, auction });
+});`;
+
+  const currentCode = activeTab === "component" ? componentSnippet : backendSnippet;
 
   const handleCopy = () => {
     navigator.clipboard.writeText(currentCode);
@@ -93,7 +101,7 @@ export const usePortfolio = (projects, filters) => {
             }`}
           >
             <FileCode className="w-3 h-3 text-sky-400" />
-            <span>Developer.jsx</span>
+            <span>FullStackDeveloper.jsx</span>
           </button>
           <button
             onClick={() => setActiveTab("hook")}
@@ -104,7 +112,7 @@ export const usePortfolio = (projects, filters) => {
             }`}
           >
             <Terminal className="w-3 h-3 text-purple-400" />
-            <span>usePortfolio.js</span>
+            <span>apiServer.js</span>
           </button>
         </div>
 
@@ -210,9 +218,9 @@ export const usePortfolio = (projects, filters) => {
       <div className="flex items-center justify-between px-4 py-2 bg-[#04060e] border-t border-white/[0.05] text-[11px] text-slate-400 font-mono">
         <div className="flex items-center gap-2">
           <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-          <span className="text-emerald-300 font-semibold">REACT 18 READY</span>
+          <span className="text-emerald-300 font-semibold">MERN STACK READY</span>
         </div>
-        <div>UTF-8 · LF · {activeTab === "component" ? "JSX / React.js" : "ES6+ JavaScript"}</div>
+        <div>UTF-8 · LF · {activeTab === "component" ? "JSX / React.js" : "Node.js / Express API"}</div>
       </div>
     </motion.div>
   );

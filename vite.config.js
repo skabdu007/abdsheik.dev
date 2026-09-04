@@ -6,9 +6,9 @@ import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // https://vitejs.dev/config/
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   plugins: [react()],
-  base: process.env.NODE_ENV === "production" ? "/abdsheik.dev/" : "/",
+  base: command === "build" ? "/abdsheik.dev/" : "/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
@@ -18,4 +18,4 @@ export default defineConfig({
     port: 3000,
     open: false,
   },
-});
+}));
