@@ -34,7 +34,17 @@ export const experienceData = [
       "CSS3",
       "Git",
       "GitHub"
-    ]
+    ],
+    certificate: {
+      title: "MERN Stack Developer Internship Credential",
+      issuer: "Friendzion Technologies",
+      credentialId: "FZ-MERN-INTERN-2026",
+      issueDate: "2026",
+      status: "Active Role",
+      url: "/assets/certificates/react-cert.svg",
+      downloadName: "Friendzion_MERN_Certificate.svg",
+      fileType: "svg"
+    }
   },
   {
     id: "exp-2",
@@ -70,6 +80,16 @@ export const experienceData = [
       "RESTful APIs",
       "Git",
       "GitHub"
-    ]
+    ],
+    certificate: {
+      title: "Web Development Internship Certificate",
+      issuer: "DCE Technology",
+      credentialId: "DCE-INTERN-2026-043",
+      issueDate: "April 2026",
+      status: "Verified Credential",
+      url: "/assets/certificates/dce-internship-cert.svg",
+      downloadName: "DCE_Technology_Internship_Certificate.svg",
+      fileType: "svg"
+    }
   }
 ];

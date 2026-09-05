@@ -129,7 +129,36 @@ export const DocumentViewerModal = () => {
 
             {/* Modal Body */}
             <div className="flex-1 overflow-hidden relative bg-[#04060e] flex flex-col">
-              {fileType === "pdf" ? (
+              {fileType === "svg" || fileType === "image" ? (
+                <div className="w-full h-full flex flex-col relative bg-[#04060e]">
+                  {/* Quick Bar */}
+                  <div className="px-4 py-2 bg-[#060a17] border-b border-white/[0.08] flex items-center justify-between text-xs font-mono text-slate-300 shrink-0">
+                    <div className="flex items-center gap-2">
+                      <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                      <span className="text-slate-200 font-semibold">Official Verified Certificate</span>
+                      <span className="text-slate-400 font-mono">(SVG Vector)</span>
+                    </div>
+                    <a
+                      href={url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-cyan-400 hover:text-cyan-300 font-bold underline inline-flex items-center gap-1.5"
+                    >
+                      <ExternalLink className="w-3.5 h-3.5" />
+                      <span>Open in Full Tab</span>
+                    </a>
+                  </div>
+
+                  {/* Certificate Image View */}
+                  <div className="flex-1 w-full h-full p-4 sm:p-8 flex items-center justify-center overflow-auto bg-grid-pattern">
+                    <img
+                      src={url}
+                      alt={title}
+                      className="max-w-full max-h-full object-contain rounded-2xl shadow-2xl border border-amber-500/30 bg-[#050816]"
+                    />
+                  </div>
+                </div>
+              ) : fileType === "pdf" ? (
                 <div className="w-full h-full flex flex-col relative">
                   {/* Quick Bar */}
                   <div className="px-4 py-2 bg-[#060a17] border-b border-white/[0.08] flex items-center justify-between text-xs font-mono text-slate-300 shrink-0">

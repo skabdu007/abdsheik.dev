@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="certBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050816"/>
+      <stop offset="50%" stop-color="#0a122c"/>
+      <stop offset="100%" stop-color="#040612"/>
+    </linearGradient>
+
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+
+    <radialGradient id="centerGlow" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.12"/>
+      <stop offset="60%" stop-color="#6366f1" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="transparent" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="certDropGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <pattern id="certGridPattern" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#38bdf8" stroke-width="0.5" stroke-opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <!-- Outer Canvas Base -->
+  <rect width="800" height="560" rx="20" fill="url(#certBgGrad)"/>
+  <rect width="800" height="560" rx="20" fill="url(#centerGlow)"/>
+  <rect width="800" height="560" fill="url(#certGridPattern)"/>
+
+  <!-- Ornate Dual Border -->
+  <rect x="20" y="20" width="760" height="520" rx="14" stroke="url(#goldGrad)" stroke-width="2" opacity="0.85"/>
+  <rect x="28" y="28" width="744" height="504" rx="10" stroke="url(#cyanGrad)" stroke-width="1" opacity="0.4" stroke-dasharray="6 4"/>
+  <rect x="34" y="34" width="732" height="492" rx="8" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1"/>
+
+  <!-- Corner Tech Geometry -->
+  <!-- Top-Left -->
+  <path d="M 20 50 L 50 20" stroke="url(#goldGrad)" stroke-width="2"/>
+  <circle cx="50" cy="50" r="3" fill="#38bdf8"/>
+  <rect x="36" y="36" width="6" height="6" fill="#f59e0b" opacity="0.7"/>
+
+  <!-- Top-Right -->
+  <path d="M 780 50 L 750 20" stroke="url(#goldGrad)" stroke-width="2"/>
+  <circle cx="750" cy="50" r="3" fill="#818cf8"/>
+  <rect x="758" y="36" width="6" height="6" fill="#f59e0b" opacity="0.7"/>
+
+  <!-- Bottom-Left -->
+  <path d="M 20 510 L 50 540" stroke="url(#goldGrad)" stroke-width="2"/>
+  <circle cx="50" cy="510" r="3" fill="#818cf8"/>
+  <rect x="36" y="518" width="6" height="6" fill="#f59e0b" opacity="0.7"/>
+
+  <!-- Bottom-Right -->
+  <path d="M 780 510 L 750 540" stroke="url(#goldGrad)" stroke-width="2"/>
+  <circle cx="750" cy="510" r="3" fill="#38bdf8"/>
+  <rect x="758" y="518" width="6" height="6" fill="#f59e0b" opacity="0.7"/>
+
+  <!-- HEADER: Organization Brand -->
+  <g id="header">
+    <rect x="310" y="48" width="180" height="24" rx="12" fill="rgba(56, 189, 248, 0.1)" stroke="url(#cyanGrad)" stroke-width="1"/>
+    <text x="400" y="64" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" letter-spacing="2" text-anchor="middle">
+      DCE TECHNOLOGY · INTERNSHIP PROGRAM
+    </text>
+
+    <text x="400" y="112" fill="#ffffff" font-family="Inter, sans-serif" font-size="26" font-weight="900" letter-spacing="4" text-anchor="middle">
+      CERTIFICATE OF INTERNSHIP
+    </text>
+
+    <text x="400" y="134" fill="#f59e0b" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" letter-spacing="3" text-anchor="middle">
+      EXCELLENCE IN WEB DEVELOPMENT &amp; MERN STACK
+    </text>
+  </g>
+
+  <!-- Divider Line -->
+  <line x1="220" y1="148" x2="580" y2="148" stroke="url(#goldGrad)" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+  <circle cx="400" cy="148" r="4" fill="#f59e0b"/>
+
+  <!-- BODY: Recipient & Award Statement -->
+  <g id="body">
+    <text x="400" y="180" fill="#94a3b8" font-family="Inter, sans-serif" font-size="13" text-anchor="middle">
+      This is proudly presented to certify that
+    </text>
+
+    <!-- Candidate Name -->
+    <text x="400" y="222" fill="#ffffff" font-family="'JetBrains Mono', monospace" font-size="28" font-weight="900" letter-spacing="3" text-anchor="middle">
+      SHEIK ABDULLA S
+    </text>
+    <line x1="260" y1="234" x2="540" y2="234" stroke="#38bdf8" stroke-width="1" stroke-dasharray="4 4" opacity="0.6"/>
+
+    <text x="400" y="260" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="13" font-weight="500" text-anchor="middle">
+      Candidate Reg No: <tspan fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-weight="bold">24SPCA043</tspan> · MCA Graduate
+    </text>
+
+    <text x="400" y="296" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12.5" text-anchor="middle">
+      has successfully completed an intensive internship as a
+    </text>
+
+    <!-- Role Highlight Box -->
+    <rect x="230" y="310" width="340" height="34" rx="8" fill="rgba(14, 165, 233, 0.12)" stroke="#38bdf8" stroke-width="1"/>
+    <text x="400" y="332" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="bold" letter-spacing="1.5" text-anchor="middle">
+      WEB DEVELOPMENT INTERN
+    </text>
+
+    <!-- Scope of Work Description -->
+    <text x="400" y="372" fill="#94a3b8" font-family="Inter, sans-serif" font-size="11.5" text-anchor="middle">
+      at DCE Technology from <tspan fill="#ffffff" font-weight="bold">January 2026 to April 2026</tspan>.
+    </text>
+    <text x="400" y="394" fill="#94a3b8" font-family="Inter, sans-serif" font-size="11.5" text-anchor="middle">
+      Demonstrated exceptional skills in <tspan fill="#38bdf8">React.js, Node.js, Express.js, MongoDB, JWT RBAC</tspan>,
+    </text>
+    <text x="400" y="414" fill="#94a3b8" font-family="Inter, sans-serif" font-size="11.5" text-anchor="middle">
+      and architected a live real-time auction bidding engine with high concurrency validation.
+    </text>
+  </g>
+
+  <!-- FOOTER: Seal & Signatures -->
+  <g id="footer">
+    <!-- Left: Verification Seal -->
+    <g transform="translate(130, 440)">
+      <circle cx="36" cy="36" r="32" fill="rgba(245, 158, 11, 0.1)" stroke="url(#goldGrad)" stroke-width="2"/>
+      <circle cx="36" cy="36" r="26" stroke="#f59e0b" stroke-width="1" stroke-dasharray="3 3"/>
+      <path d="M 28 36 L 33 41 L 45 29" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="80" y="30" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">
+        ✓ VERIFIED CREDENTIAL
+      </text>
+      <text x="80" y="46" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="9">
+        ID: DCE-INTERN-2026-043
+      </text>
+    </g>
+
+    <!-- Right: Authorized Signature / Director -->
+    <g transform="translate(520, 440)">
+      <!-- Signature Line -->
+      <path d="M 10 32 Q 50 10 90 28 T 160 20" stroke="#38bdf8" stroke-width="2" fill="none" opacity="0.8"/>
+      <line x1="0" y1="42" x2="180" y2="42" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1"/>
+      <text x="90" y="58" fill="#ffffff" font-family="Inter, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">
+        Authorized Signatory
+      </text>
+      <text x="90" y="72" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">
+        DCE TECHNOLOGY · TAMIL NADU
+      </text>
+    </g>
+  </g>
+
+  <!-- Official Security Hash Strip -->
+  <rect x="50" y="522" width="700" height="1" fill="rgba(255, 255, 255, 0.08)"/>
+  <text x="400" y="534" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="middle" letter-spacing="1">
+    VERIFICATION HASH: 7d4a9f2e-dce2026-mern-auction-24spca043 // ISSUED APRIL 2026 // OFFICIAL RECORD
+  </text>
+</svg>

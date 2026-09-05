@@ -145,6 +145,26 @@ export const CommandPalette = () => {
       },
     },
     {
+      id: "view-dce-cert",
+      title: "View DCE Technology Internship Certificate",
+      subtitle: "Web Development Intern · Credential ID: DCE-INTERN-2026-043",
+      category: "Experience",
+      icon: Award,
+      iconColor: "text-amber-400",
+      perform: () => {
+        setIsOpen(false);
+        openModal({
+          title: "Web Development Internship Certificate",
+          subtitle: "DCE Technology · Credential ID: DCE-INTERN-2026-043",
+          url: getAssetUrl("/assets/certificates/dce-internship-cert.svg"),
+          fileType: "svg",
+          size: "Verified Credential",
+          downloadName: "DCE_Technology_Internship_Certificate.svg",
+          badge: "Internship Certificate",
+        });
+      },
+    },
+    {
       id: "live-demo-fashion",
       title: "Launch Fashion E-Commerce Live Demo",
       subtitle: "https://fashion-zeta-ten.vercel.app/ · Full Stack MERN Live App (Vercel)",

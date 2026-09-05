@@ -1,5 +1,17 @@
 export const certificationsData = [
   {
+    id: "cert-dce-intern",
+    name: "Web Development Internship Certificate",
+    issuer: "DCE Technology",
+    date: "Completed April 2026",
+    credentialId: "DCE-INTERN-2026-043",
+    url: "/assets/certificates/dce-internship-cert.svg",
+    image: "/assets/certificates/dce-internship-cert.svg",
+    iconName: "Briefcase",
+    isInternship: true,
+    skills: ["Full Stack MERN", "React.js", "Node.js", "Express.js", "MongoDB", "JWT Auth", "REST APIs", "Real-Time Bidding"]
+  },
+  {
     id: "cert-1",
     name: "React.js Certification",
     issuer: "Friendzion Technologies & Meta Learning",
