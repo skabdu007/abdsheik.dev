@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <defs>
+    <linearGradient id="ecomBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329" />
+      <stop offset="50%" stop-color="#080e1e" />
+      <stop offset="100%" stop-color="#050816" />
+    </linearGradient>
+    <linearGradient id="ecomAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" rx="16" fill="url(#ecomBg)" />
+  <rect x="1" y="1" width="798" height="498" rx="15" stroke="rgba(56, 189, 248, 0.2)" stroke-width="1.5" />
+
+  <!-- Ambient Glow -->
+  <circle cx="200" cy="150" r="140" fill="#38bdf8" opacity="0.08" filter="url(#glow)" />
+  <circle cx="650" cy="350" r="160" fill="#818cf8" opacity="0.08" filter="url(#glow)" />
+
+  <!-- App Window Frame -->
+  <g transform="translate(40, 40)">
+    <!-- Window Bar -->
+    <rect width="720" height="420" rx="12" fill="#0c1224" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+    <path d="M 0 40 L 720 40" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+    <!-- Window Controls -->
+    <circle cx="24" cy="20" r="5" fill="#ef4444" />
+    <circle cx="42" cy="20" r="5" fill="#f59e0b" />
+    <circle cx="60" cy="20" r="5" fill="#10b981" />
+    <text x="360" y="24" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="middle">react-storefront.dev · React.js + Redux</text>
+
+    <!-- App Header -->
+    <rect x="24" y="58" width="672" height="42" rx="8" fill="#101830" />
+    <text x="44" y="84" fill="#38bdf8" font-family="Inter, sans-serif" font-weight="bold" font-size="14">⚡ NOVA STORE</text>
+    <rect x="180" y="68" width="220" height="22" rx="6" fill="#080d1e" />
+    <text x="194" y="83" fill="#64748b" font-family="Inter, sans-serif" font-size="10">Search apparel, footwear, accessories...</text>
+    <rect x="610" y="68" width="66" height="22" rx="6" fill="url(#ecomAccent)" />
+    <text x="643" y="83" fill="#ffffff" font-family="Inter, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Cart (3)</text>
+
+    <!-- Hero Banner -->
+    <rect x="24" y="112" width="672" height="110" rx="10" fill="#121b36" stroke="rgba(56, 189, 248, 0.25)" stroke-width="1" />
+    <text x="48" y="152" fill="#ffffff" font-family="Inter, sans-serif" font-size="20" font-weight="bold">SPRING EDIT 2026</text>
+    <text x="48" y="176" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12">High-performance React state management with live inventory sync</text>
+    <rect x="48" y="190" width="100" height="24" rx="12" fill="url(#ecomAccent)" />
+    <text x="98" y="206" fill="#ffffff" font-family="Inter, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">SHOP DROP</text>
+
+    <!-- Product Grid Cards -->
+    <g transform="translate(24, 236)">
+      <!-- Card 1 -->
+      <rect x="0" y="0" width="156" height="164" rx="8" fill="#0e162c" stroke="rgba(255, 255, 255, 0.05)" />
+      <rect x="12" y="12" width="132" height="80" rx="6" fill="#172342" />
+      <circle cx="78" cy="52" r="24" fill="#38bdf8" opacity="0.3" />
+      <text x="12" y="112" fill="#ffffff" font-family="Inter, sans-serif" font-size="11" font-weight="600">Cyber Jacket V2</text>
+      <text x="12" y="128" fill="#38bdf8" font-family="Inter, sans-serif" font-size="11" font-weight="bold">$189.00</text>
+      <rect x="12" y="136" width="132" height="18" rx="4" fill="#1c284e" />
+      <text x="78" y="149" fill="#94a3b8" font-family="Inter, sans-serif" font-size="9" text-anchor="middle">Add to Cart</text>
+
+      <!-- Card 2 -->
+      <rect x="172" y="0" width="156" height="164" rx="8" fill="#0e162c" stroke="rgba(255, 255, 255, 0.05)" />
+      <rect x="184" y="12" width="132" height="80" rx="6" fill="#172342" />
+      <polygon points="250,32 274,72 226,72" fill="#818cf8" opacity="0.4" />
+      <text x="184" y="112" fill="#ffffff" font-family="Inter, sans-serif" font-size="11" font-weight="600">Kinetic Runners</text>
+      <text x="184" y="128" fill="#38bdf8" font-family="Inter, sans-serif" font-size="11" font-weight="bold">$145.00</text>
+      <rect x="184" y="136" width="132" height="18" rx="4" fill="#1c284e" />
+      <text x="250" y="149" fill="#94a3b8" font-family="Inter, sans-serif" font-size="9" text-anchor="middle">Add to Cart</text>
+
+      <!-- Card 3 -->
+      <rect x="344" y="0" width="156" height="164" rx="8" fill="#0e162c" stroke="rgba(255, 255, 255, 0.05)" />
+      <rect x="356" y="12" width="132" height="80" rx="6" fill="#172342" />
+      <rect x="396" y="32" width="52" height="40" rx="4" fill="#38bdf8" opacity="0.3" />
+      <text x="356" y="112" fill="#ffffff" font-family="Inter, sans-serif" font-size="11" font-weight="600">Matte Techpack</text>
+      <text x="356" y="128" fill="#38bdf8" font-family="Inter, sans-serif" font-size="11" font-weight="bold">$92.00</text>
+      <rect x="356" y="136" width="132" height="18" rx="4" fill="#1c284e" />
+      <text x="422" y="149" fill="#94a3b8" font-family="Inter, sans-serif" font-size="9" text-anchor="middle">Add to Cart</text>
+
+      <!-- Card 4 -->
+      <rect x="516" y="0" width="156" height="164" rx="8" fill="#0e162c" stroke="rgba(255, 255, 255, 0.05)" />
+      <rect x="528" y="12" width="132" height="80" rx="6" fill="#172342" />
+      <circle cx="594" cy="52" r="20" stroke="#818cf8" stroke-width="4" fill="none" opacity="0.5" />
+      <text x="528" y="112" fill="#ffffff" font-family="Inter, sans-serif" font-size="11" font-weight="600">Aero Chrono</text>
+      <text x="528" y="128" fill="#38bdf8" font-family="Inter, sans-serif" font-size="11" font-weight="bold">$260.00</text>
+      <rect x="528" y="136" width="132" height="18" rx="4" fill="#1c284e" />
+      <text x="594" y="149" fill="#94a3b8" font-family="Inter, sans-serif" font-size="9" text-anchor="middle">Add to Cart</text>
+    </g>
+  </g>
+</svg>

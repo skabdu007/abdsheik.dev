@@ -1,0 +1,64 @@
+<svg width="800" height="480" viewBox="0 0 800 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="480" fill="#060A15"/>
+  <circle cx="400" cy="220" r="270" fill="url(#pulse_glow)" opacity="0.3"/>
+
+  <!-- Grid -->
+  <path d="M0 60H800M0 120H800M0 180H800M0 240H800M0 300H800M0 360H800M0 420H800" stroke="#1E293B" stroke-opacity="0.3" stroke-width="1"/>
+
+  <!-- Container Window -->
+  <rect x="50" y="45" width="700" height="390" rx="14" fill="#0A1020" stroke="#1E293B" stroke-width="1.5"/>
+  <rect x="50" y="45" width="700" height="42" rx="14" fill="#0D162B"/>
+  <circle cx="78" cy="66" r="5" fill="#EF4444"/>
+  <circle cx="96" cy="66" r="5" fill="#F59E0B"/>
+  <circle cx="114" cy="66" r="5" fill="#10B981"/>
+  <text x="138" y="70" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">Pulse DevOps Monitor — Kubernetes Pod Telemetry &amp; Node Health</text>
+
+  <!-- Live Pulse Graph (ECG / wave style) -->
+  <g transform="translate(80, 110)">
+    <rect width="640" height="150" rx="8" fill="#080D1A" stroke="#1E293B"/>
+    <!-- Heartbeat / CPU line -->
+    <path d="M20 75H120L140 30L160 120L180 75H260L280 40L300 110L320 75H400L420 20L440 130L460 75H540L560 45L580 100L600 75H620" stroke="url(#ecg_grad)" stroke-width="3" fill="none"/>
+    <text x="20" y="25" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">CLUSTER CPU &amp; MEMORY SPIKES (LIVE 100MS STREAM)</text>
+    <circle cx="440" cy="130" r="4" fill="#F43F5E"/>
+    <text x="455" y="134" fill="#F43F5E" font-family="monospace" font-size="10">Spike detected: pod-auth-64b</text>
+  </g>
+
+  <!-- Node Status Badges -->
+  <g transform="translate(80, 280)">
+    <!-- Pod 1 -->
+    <rect x="0" y="0" width="195" height="120" rx="8" fill="#0D1528" stroke="#1E293B"/>
+    <circle cx="24" cy="28" r="6" fill="#10B981"/>
+    <text x="40" y="32" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="13" font-weight="600">k8s-node-us-east-1</text>
+    <text x="24" y="65" fill="#64748B" font-family="system-ui, sans-serif" font-size="11">CPU Load: 24%</text>
+    <text x="24" y="85" fill="#64748B" font-family="system-ui, sans-serif" font-size="11">Memory: 4.2 / 16 GB</text>
+    <text x="24" y="105" fill="#34D399" font-family="system-ui, sans-serif" font-size="10">● HEALTHY · 42 pods</text>
+
+    <!-- Pod 2 -->
+    <rect x="220" y="0" width="195" height="120" rx="8" fill="#0D1528" stroke="#1E293B"/>
+    <circle cx="244" cy="28" r="6" fill="#10B981"/>
+    <text x="260" y="32" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="13" font-weight="600">k8s-node-eu-west-1</text>
+    <text x="244" y="65" fill="#64748B" font-family="system-ui, sans-serif" font-size="11">CPU Load: 38%</text>
+    <text x="244" y="85" fill="#64748B" font-family="system-ui, sans-serif" font-size="11">Memory: 8.1 / 16 GB</text>
+    <text x="244" y="105" fill="#34D399" font-family="system-ui, sans-serif" font-size="10">● HEALTHY · 56 pods</text>
+
+    <!-- Pod 3 -->
+    <rect x="440" y="0" width="200" height="120" rx="8" fill="#0D1528" stroke="#1E293B"/>
+    <circle cx="464" cy="28" r="6" fill="#60A5FA"/>
+    <text x="480" y="32" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="13" font-weight="600">daemon-pulse-worker</text>
+    <text x="464" y="65" fill="#64748B" font-family="system-ui, sans-serif" font-size="11">Memory Footprint: 18MB</text>
+    <text x="464" y="85" fill="#64748B" font-family="system-ui, sans-serif" font-size="11">Ingested Events: 2.4M</text>
+    <text x="464" y="105" fill="#60A5FA" font-family="system-ui, sans-serif" font-size="10">● Go Daemon V2.4</text>
+  </g>
+
+  <defs>
+    <radialGradient id="pulse_glow" cx="0.5" cy="0.5" r="0.5">
+      <stop stop-color="#06B6D4"/>
+      <stop offset="1" stop-color="#06B6D4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ecg_grad" x1="20" y1="75" x2="620" y2="75" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#06B6D4"/>
+      <stop offset="0.5" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#A855F7"/>
+    </linearGradient>
+  </defs>
+</svg>
