@@ -22,7 +22,8 @@ import {
   Award,
   Copy,
   Check,
-  X
+  X,
+  ExternalLink
 } from "lucide-react";
 import { personalData } from "@/data/personal";
 import { useDocumentModal } from "@/context/DocumentModalContext";
@@ -141,6 +142,19 @@ export const CommandPalette = () => {
         link.download = "24spca043_fashion_E-Com.pptx";
         link.click();
         showToast("Downloading Defense Slide Deck (.pptx)...");
+      },
+    },
+    {
+      id: "live-demo-fashion",
+      title: "Launch Fashion E-Commerce Live Demo",
+      subtitle: "https://fashion-zeta-ten.vercel.app/ · Full Stack MERN Live App (Vercel)",
+      category: "Projects",
+      icon: ExternalLink,
+      iconColor: "text-emerald-400",
+      perform: () => {
+        setIsOpen(false);
+        window.open("https://fashion-zeta-ten.vercel.app/", "_blank", "noopener,noreferrer");
+        showToast("Launching Fashion E-Commerce Live Demo on Vercel...");
       },
     },
     {

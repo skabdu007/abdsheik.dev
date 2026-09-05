@@ -247,9 +247,20 @@ export const DeliverablesHub = () => {
                   <span>Download Report (.PDF)</span>
                 </a>
 
+                <a
+                  href={deliverables.doc.downloadName ? (personalData.deliverables.doc.liveDemoUrl || "https://fashion-zeta-ten.vercel.app/") : "https://fashion-zeta-ten.vercel.app/"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full inline-flex items-center justify-center gap-1.5 text-xs font-mono font-semibold text-emerald-400 hover:text-emerald-300 pt-1 transition-colors"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse shrink-0" />
+                  <span>Launch Live Vercel App</span>
+                  <ExternalLink className="w-3.5 h-3.5 shrink-0" />
+                </a>
+
                 <Link
                   to="/projects/fashion-ecommerce-auction-platform"
-                  className="w-full inline-flex items-center justify-center gap-1.5 text-xs font-mono text-indigo-400 hover:text-cyan-300 pt-1 transition-colors"
+                  className="w-full inline-flex items-center justify-center gap-1.5 text-xs font-mono text-indigo-400 hover:text-cyan-300 transition-colors"
                 >
                   <span>Explore Interactive Case Study</span>
                   <ArrowRight className="w-3.5 h-3.5" />
@@ -330,9 +341,20 @@ export const DeliverablesHub = () => {
                   <span>Download Deck (.PPTX)</span>
                 </a>
 
+                <a
+                  href={deliverables.ppt.downloadName ? (personalData.deliverables.ppt.liveDemoUrl || "https://fashion-zeta-ten.vercel.app/") : "https://fashion-zeta-ten.vercel.app/"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full inline-flex items-center justify-center gap-1.5 text-xs font-mono font-semibold text-emerald-400 hover:text-emerald-300 pt-1 transition-colors"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse shrink-0" />
+                  <span>Launch Live Vercel App</span>
+                  <ExternalLink className="w-3.5 h-3.5 shrink-0" />
+                </a>
+
                 <Link
                   to="/projects/fashion-ecommerce-auction-platform"
-                  className="w-full inline-flex items-center justify-center gap-1.5 text-xs font-mono text-amber-400 hover:text-cyan-300 pt-1 transition-colors"
+                  className="w-full inline-flex items-center justify-center gap-1.5 text-xs font-mono text-amber-400 hover:text-cyan-300 transition-colors"
                 >
                   <span>Explore Interactive Case Study</span>
                   <ArrowRight className="w-3.5 h-3.5" />

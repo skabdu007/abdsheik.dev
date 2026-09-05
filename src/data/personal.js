@@ -69,6 +69,7 @@ export const personalData = {
       url: "/Doc/fashion_e_com_preview.pdf",
       size: "7.0 MB",
       downloadName: "fashion_e_com_preview.pdf",
+      liveDemoUrl: "https://fashion-zeta-ten.vercel.app/",
       highlights: [
         "Complete System Architecture & Normalized MongoDB Schemas",
         "Data Flow Diagrams (DFD Level 0, 1, 2) & Use Cases",
@@ -82,6 +83,7 @@ export const personalData = {
       url: "/PPT/24spca043_fashion_E-Com.pptx",
       size: "6.6 MB",
       downloadName: "24spca043_fashion_E-Com.pptx",
+      liveDemoUrl: "https://fashion-zeta-ten.vercel.app/",
       highlights: [
         "Executive Project Summary & Architecture Workflows",
         "MERN Stack (MongoDB, Express.js, React.js, Node.js)",

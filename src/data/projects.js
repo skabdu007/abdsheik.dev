@@ -20,7 +20,7 @@ export const projectsData = [
       "Tailwind CSS"
     ],
     github: "https://github.com/skabdu007/abdsheik.dev",
-    demo: "https://skabdu007.github.io/abdsheik.dev/",
+    demo: "https://fashion-zeta-ten.vercel.app/",
     overview: "A flagship full-stack MERN application architected with end-to-end user lifecycle management, live auction bidding mechanics, and role-based access control (Admin / Vendor / User). Developed as a major postgraduate engineering capstone project.",
     problem: "Conventional e-commerce platforms lack real-time bidding synchronization, atomic highest-bid validation, and granular role permissions across admin, vendor, and customer dashboards.",
     solution: "Engineered modular Express.js REST API endpoints backed by normalized MongoDB schemas, JWT RBAC security, and an atomic highest-bid validation engine paired with a responsive React.js storefront.",
