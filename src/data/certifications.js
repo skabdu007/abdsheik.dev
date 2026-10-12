@@ -26,7 +26,7 @@ export const certificationsData = [
     fileUrl: "/Intern/SHEIK_ABDULLA_S_FRIENDZION.pdf",
     downloadName: "Sheik_Abdulla_S_Friendzion_Certificate.pdf",
     fileType: "pdf",
-    size: "82 KB",
+    size: "1.4 MB",
     iconName: "Briefcase",
     isInternship: true,
     skills: ["Full Stack MERN", "React.js", "Node.js", "Express.js", "MongoDB", "REST APIs", "Biopure STP", "Frametronix Global"]

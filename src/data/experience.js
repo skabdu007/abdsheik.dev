@@ -45,7 +45,7 @@ export const experienceData = [
       originalUrl: "/Intern/Sheik Abdulla_S.pdf",
       downloadName: "Sheik_Abdulla_S_Friendzion_Certificate.pdf",
       fileType: "pdf",
-      size: "82 KB"
+      size: "1.4 MB"
     }
   },
   {

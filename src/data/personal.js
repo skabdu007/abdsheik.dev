@@ -109,7 +109,7 @@ export const personalData = {
         credentialId: "Intern No: 38",
         duration: "2026",
         url: "/Intern/SHEIK_ABDULLA_S_FRIENDZION.pdf",
-        size: "82 KB",
+        size: "1.4 MB",
         downloadName: "Sheik_Abdulla_S_Friendzion_Certificate.pdf"
       }
     ]

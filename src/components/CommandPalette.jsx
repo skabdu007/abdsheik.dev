@@ -178,7 +178,7 @@ export const CommandPalette = () => {
           subtitle: "Friendzion Technologies · Intern No: 38",
           url: getAssetUrl("/Intern/SHEIK_ABDULLA_S_FRIENDZION.pdf"),
           fileType: "pdf",
-          size: "82 KB",
+          size: "1.4 MB",
           downloadName: "Sheik_Abdulla_S_Friendzion_Certificate.pdf",
           badge: "Internship Certificate",
         });
