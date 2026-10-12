@@ -83,29 +83,29 @@ export const Certifications = () => {
                       openModal({
                         title: cert.name,
                         subtitle: `Issued by ${cert.issuer} · ID: ${cert.credentialId}`,
-                        url: getAssetUrl(cert.image || cert.url),
-                        fileType: "svg",
-                        size: "Official Credential",
-                        downloadName: `${cert.credentialId}.svg`,
+                        url: getAssetUrl(cert.fileUrl || cert.url || cert.image),
+                        fileType: cert.fileType || (cert.isInternship ? "pdf" : "svg"),
+                        size: cert.size || "Verified Credential",
+                        downloadName: cert.downloadName || `${cert.credentialId}.${cert.fileType || (cert.isInternship ? "pdf" : "svg")}`,
                         badge: cert.isInternship ? "Internship Certificate" : "Technical Certificate",
                       })
                     }
                     className={`inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-mono font-bold uppercase tracking-wider transition-colors ${
                       cert.isInternship
-                        ? "bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border border-amber-500/40"
+                        ? "bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border border-amber-500/40 shadow-glow-sm"
                         : "bg-sky-500/10 hover:bg-sky-500/20 text-sky-300 border border-sky-500/30"
                     }`}
                   >
                     <Eye className="w-3.5 h-3.5" />
-                    <span>Preview Certificate</span>
+                    <span>Preview Certificate{cert.fileType === "pdf" ? " (PDF)" : ""}</span>
                   </button>
 
                   <a
-                    href={getAssetUrl(cert.image || cert.url)}
+                    href={getAssetUrl(cert.fileUrl || cert.url || cert.image)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-xl bg-white/[0.04] hover:bg-white/[0.1] text-slate-300 hover:text-white border border-white/10 transition-colors"
-                    title="Open in new tab"
+                    title={cert.fileType === "pdf" ? "Open PDF in new tab" : "Open in new tab"}
                   >
                     <ExternalLink className="w-4 h-4" />
                   </a>

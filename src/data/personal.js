@@ -90,6 +90,28 @@ export const personalData = {
         "Dynamic Highest-Bid Validation Logic & Live Demonstration",
         "Candidate Registration: 24SPCA043 Defense Presentation"
       ]
-    }
+    },
+    internships: [
+      {
+        id: "dce-cert",
+        title: "DCE Technology - Project Completion & Internship Certificate",
+        company: "DCE Technology",
+        credentialId: "Reg No: 24SPCA043",
+        duration: "Jan 2026 – Apr 2026",
+        url: "/Intern/SHEIK_ABDULLA_S_DCE.pdf",
+        size: "779 KB",
+        downloadName: "Sheik_Abdulla_S_DCE_Certificate.pdf"
+      },
+      {
+        id: "friendzion-cert",
+        title: "Friendzion Technologies - Internship Certificate",
+        company: "Friendzion Technologies",
+        credentialId: "Intern No: 38",
+        duration: "2026",
+        url: "/Intern/SHEIK_ABDULLA_S_FRIENDZION.pdf",
+        size: "82 KB",
+        downloadName: "Sheik_Abdulla_S_Friendzion_Certificate.pdf"
+      }
+    ]
   }
 };

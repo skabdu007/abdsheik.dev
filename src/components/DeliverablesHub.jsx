@@ -10,7 +10,8 @@ import {
   Sparkles,
   CheckCircle2,
   HardDriveDownload,
-  ExternalLink
+  ExternalLink,
+  Award
 } from "lucide-react";
 import { personalData } from "@/data/personal";
 import { SectionHeading } from "@/components/SectionHeading";
@@ -55,6 +56,30 @@ export const DeliverablesHub = () => {
       size: deliverables.ppt.size,
       downloadName: deliverables.ppt.downloadName,
       badge: "PowerPoint Deck",
+    });
+  };
+
+  const handlePreviewDceCert = () => {
+    openModal({
+      title: "Web Development Internship & Project Certificate",
+      subtitle: "DCE Technology · Credential ID: Reg No: 24SPCA043",
+      url: getAssetUrl("/Intern/SHEIK_ABDULLA_S_DCE.pdf"),
+      fileType: "pdf",
+      size: "779 KB",
+      downloadName: "Sheik_Abdulla_S_DCE_Certificate.pdf",
+      badge: "Internship Certificate",
+    });
+  };
+
+  const handlePreviewFriendzionCert = () => {
+    openModal({
+      title: "Full Stack Web Development Internship Certificate",
+      subtitle: "Friendzion Technologies · Intern No: 38",
+      url: getAssetUrl("/Intern/SHEIK_ABDULLA_S_FRIENDZION.pdf"),
+      fileType: "pdf",
+      size: "82 KB",
+      downloadName: "Sheik_Abdulla_S_Friendzion_Certificate.pdf",
+      badge: "Internship Certificate",
     });
   };
 
@@ -364,6 +389,50 @@ export const DeliverablesHub = () => {
           </AnimatedContainer>
 
         </div>
+
+        {/* Verified Internship Certificates Quick Access Strip */}
+        <AnimatedContainer direction="up" delay={0.4} className="mt-8">
+          <div className="rounded-2xl p-6 bg-gradient-to-r from-amber-500/10 via-[#091124] to-sky-500/10 border border-amber-500/30 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 shadow-glow-sm">
+            <div className="flex items-start sm:items-center gap-4">
+              <div className="w-12 h-12 rounded-2xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-300 shrink-0 shadow-glow-sm">
+                <Award className="w-6 h-6" />
+              </div>
+              <div>
+                <div className="flex flex-wrap items-center gap-2">
+                  <h4 className="text-base font-bold text-white uppercase tracking-wider">
+                    Official Internship Credentials (Original PDFs)
+                  </h4>
+                  <span className="px-2.5 py-0.5 rounded-full text-[10px] font-mono text-emerald-300 bg-emerald-500/15 border border-emerald-500/30">
+                    2 Verified Certificates
+                  </span>
+                </div>
+                <p className="text-xs font-mono text-slate-300 mt-1">
+                  Official project completion and internship verification certificates issued by DCE Technology &amp; Friendzion Technologies.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex flex-wrap sm:flex-nowrap items-center gap-3 w-full lg:w-auto">
+              <button
+                type="button"
+                onClick={handlePreviewDceCert}
+                className="flex-1 lg:flex-none inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs font-mono font-bold uppercase tracking-wider bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border border-amber-500/40 transition-colors shadow-glow-sm"
+              >
+                <Eye className="w-3.5 h-3.5" />
+                <span>DCE Technology PDF</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={handlePreviewFriendzionCert}
+                className="flex-1 lg:flex-none inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs font-mono font-bold uppercase tracking-wider bg-sky-500/20 hover:bg-sky-500/30 text-sky-300 border border-sky-500/40 transition-colors shadow-glow-sm"
+              >
+                <Eye className="w-3.5 h-3.5" />
+                <span>Friendzion PDF</span>
+              </button>
+            </div>
+          </div>
+        </AnimatedContainer>
       </div>
     </section>
   );

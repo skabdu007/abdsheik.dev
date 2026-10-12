@@ -150,8 +150,8 @@ export const Experience = () => {
                             title: exp.certificate.title,
                             subtitle: `Issued by ${exp.certificate.issuer} · Credential ID: ${exp.certificate.credentialId}`,
                             url: getAssetUrl(exp.certificate.url),
-                            fileType: "svg",
-                            size: "Official Credential",
+                            fileType: exp.certificate.fileType || "pdf",
+                            size: exp.certificate.size || "Verified Credential",
                             downloadName: exp.certificate.downloadName,
                             badge: "Internship Certificate",
                           })
@@ -159,14 +159,14 @@ export const Experience = () => {
                         className="flex-1 sm:flex-none inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-mono font-bold uppercase tracking-wider bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border border-amber-500/40 transition-colors shadow-glow-sm"
                       >
                         <Eye className="w-3.5 h-3.5" />
-                        <span>Preview Certificate</span>
+                        <span>Preview Certificate (PDF)</span>
                       </button>
 
                       <a
                         href={getAssetUrl(exp.certificate.url)}
                         download={exp.certificate.downloadName}
                         className="p-2 rounded-xl bg-white/[0.04] hover:bg-white/[0.1] text-slate-300 hover:text-white border border-white/10 transition-colors shrink-0"
-                        title="Download Certificate SVG"
+                        title="Download Certificate PDF"
                       >
                         <Download className="w-4 h-4" />
                       </a>

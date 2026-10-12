@@ -146,8 +146,8 @@ export const CommandPalette = () => {
     },
     {
       id: "view-dce-cert",
-      title: "View DCE Technology Internship Certificate",
-      subtitle: "Web Development Intern · Credential ID: DCE-INTERN-2026-043",
+      title: "View DCE Technology Internship Certificate (PDF)",
+      subtitle: "Web Development Intern · Credential ID: 24SPCA043",
       category: "Experience",
       icon: Award,
       iconColor: "text-amber-400",
@@ -155,11 +155,31 @@ export const CommandPalette = () => {
         setIsOpen(false);
         openModal({
           title: "Web Development Internship Certificate",
-          subtitle: "DCE Technology · Credential ID: DCE-INTERN-2026-043",
-          url: getAssetUrl("/assets/certificates/dce-internship-cert.svg"),
-          fileType: "svg",
-          size: "Verified Credential",
-          downloadName: "DCE_Technology_Internship_Certificate.svg",
+          subtitle: "DCE Technology · Credential ID: Reg No: 24SPCA043",
+          url: getAssetUrl("/Intern/SHEIK_ABDULLA_S_DCE.pdf"),
+          fileType: "pdf",
+          size: "779 KB",
+          downloadName: "Sheik_Abdulla_S_DCE_Certificate.pdf",
+          badge: "Internship Certificate",
+        });
+      },
+    },
+    {
+      id: "view-friendzion-cert",
+      title: "View Friendzion Technologies Internship Certificate (PDF)",
+      subtitle: "Full Stack Web Development Intern · Intern No: 38",
+      category: "Experience",
+      icon: Award,
+      iconColor: "text-amber-400",
+      perform: () => {
+        setIsOpen(false);
+        openModal({
+          title: "Full Stack Web Development Internship Certificate",
+          subtitle: "Friendzion Technologies · Intern No: 38",
+          url: getAssetUrl("/Intern/SHEIK_ABDULLA_S_FRIENDZION.pdf"),
+          fileType: "pdf",
+          size: "82 KB",
+          downloadName: "Sheik_Abdulla_S_Friendzion_Certificate.pdf",
           badge: "Internship Certificate",
         });
       },

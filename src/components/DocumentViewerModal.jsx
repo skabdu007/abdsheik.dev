@@ -9,7 +9,8 @@ import {
   CheckCircle2,
   Sparkles,
   Layers,
-  FileSpreadsheet
+  FileSpreadsheet,
+  Award
 } from "lucide-react";
 import { useDocumentModal } from "@/context/DocumentModalContext";
 
@@ -67,6 +68,8 @@ export const DocumentViewerModal = () => {
                 <div className="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center shrink-0">
                   {fileType === "pptx" ? (
                     <Presentation className="w-5 h-5 text-amber-400" />
+                  ) : badge === "Internship Certificate" ? (
+                    <Award className="w-5 h-5 text-amber-400" />
                   ) : (
                     <FileText className="w-5 h-5 text-cyan-400" />
                   )}
@@ -164,7 +167,9 @@ export const DocumentViewerModal = () => {
                   <div className="px-4 py-2 bg-[#060a17] border-b border-white/[0.08] flex items-center justify-between text-xs font-mono text-slate-300 shrink-0">
                     <div className="flex items-center gap-2">
                       <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                      <span className="text-slate-200 font-semibold">Document Ready</span>
+                      <span className="text-slate-200 font-semibold">
+                        {badge === "Internship Certificate" ? "Official Verified Certificate (Original PDF)" : "Official Verified Document"}
+                      </span>
                       <span className="text-slate-400">({size})</span>
                     </div>
                     <a
